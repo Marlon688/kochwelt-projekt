@@ -1,0 +1,287 @@
+/* global */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway-Light.woff2') format('woff2'),
+        url('/assets/fonts/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Raleway';
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    color: #007e1e;
+    text-decoration-color: #007e1e;
+}
+
+
+
+/* mobile */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 64px;
+
+    padding-right: 16px;
+    padding-left: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-header img {
+    height: 36px;
+}
+
+.header-nav-links {
+    background-color: #ffffff;
+    position: fixed;
+    top: 64px;
+    right: -100%;
+
+    height: fit-content;
+    width: 100%;
+
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 16px;
+    transition: .3s ease;
+}
+
+.header-nav-links.active
+{
+    right: 0;
+}
+
+.ham-menu
+{
+    position: relative;
+    height: 36px;
+    width: 36px;
+}
+
+.ham-menu span
+{
+    height: 4px;
+    width: 100%;
+    background-color: #007e1e;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1)
+{
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3)
+{
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1)
+{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2)
+{
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3)
+{
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+
+
+
+.landing-page {
+    height: 300vh;
+}
+
+
+
+
+
+footer {
+    background-color: #423d3e;
+    height: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    height: 36px;
+}
+
+
+
+/* tablet */
+@media (min-width: 768px) {
+    
+    /* mehr Platz → mehr Layout */
+
+    a:hover {
+        text-decoration-thickness: 4px; 
+    }
+
+    .fixed-header {
+        height: 96px;
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+
+    .fixed-header img {
+        height: 64px;
+    }
+
+    .header-nav-links {
+        position: static;
+        padding-bottom: 8px;
+        justify-content: end;
+        flex-direction: row;
+        align-self: end;
+
+        font-weight: 500;
+
+        gap: 36px;
+    }
+
+    .ham-menu
+    {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    footer {
+        height: 96px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    footer img {
+        height: 64px;
+    }
+
+}
+
+
+/* desktop */
+@media (min-width: 1024px) 
+{
+   /* Desktop Erweiterungen */
+
+    a:hover {
+        text-decoration-thickness: 6px; 
+    }
+
+    .fixed-header {
+        height: 128px;
+    }
+
+    .fixed-header img {
+        height: 96px;
+    }
+
+    .header-nav-links {
+        font-weight: bold;
+        gap: 48px;
+    }
+
+    .ham-menu
+    {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    footer {
+        height: 128px;
+    }
+
+    footer img {
+        height: 96px;
+    }
+
+}
+
+

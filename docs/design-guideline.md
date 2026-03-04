@@ -43,7 +43,7 @@ Layouts should adapt accordingly.
 ## Typography
 
 Main font:
-(schreibt ihr rein)
+Raleway
 
 Headings:
 H1 – main page titles  
@@ -57,16 +57,19 @@ Paragraph text should remain readable on all devices.
 ## Colors
 
 Primary color:
-#xxxxxx
+#ffffff
 
 Secondary color:
-#xxxxxx
+#007e1e
 
 Background color:
-#xxxxxx
+#ffffff
 
 Text color:
-#xxxxxx
+#000
+
+Footer color:
+#423d3e
 
 ---
 
