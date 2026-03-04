@@ -157,8 +157,9 @@ a:hover {
 
 .landing-page {
     height: 300vh;
+    padding-left: 64px;
+    padding-right: 64px;
 }
-
 
 
 
@@ -263,6 +264,22 @@ footer img {
     .ham-menu
     {
         display: none;
+    }
+
+    .main-recipe {
+        display: flex;
+        margin-top: 200px;
+    }
+    
+    .main-recipe img {
+        object-fit: cover;
+        border-radius: 3%;
+        width: 400px;
+        height: 300px;
+    }
+
+    .main-recipe-text {
+        margin-left: 32px;
     }
 
 
