@@ -156,9 +156,7 @@ a:hover {
 
 
 .landing-page {
-    height: 300vh;
-    padding-left: 64px;
-    padding-right: 64px;
+    /* height: 300vh; */
     flex: 1;
 }
 
@@ -270,13 +268,16 @@ footer img {
 
     /* start page - section: main recipe */
 
-    .main-recipe {
+    .main-recipe-section {
         display: flex;
         margin-top: 200px;
         margin-bottom: 64px;
+
+        padding-left: 64px;
+        padding-right: 64px;
     }
     
-    .main-recipe img {
+    .main-recipe-section img {
         object-fit: cover;
         border-radius: 3%;
         width: 450px;
@@ -303,10 +304,14 @@ footer img {
 
     /* start page - section: recipe overview */
 
-    .recipe-overview {
+    .recipe-overview-section {
+        text-align: center;
         background-color: rgb(230, 230, 230);
         padding-top: 16px;
         padding-bottom: 64px;
+
+        padding-left: 64px;
+        padding-right: 64px;
     }
 
     .single-recipes {
@@ -324,6 +329,33 @@ footer img {
         width: 200px;
         height: 200px;
     }
+
+    /* start page - section: information */
+
+    .information-section {
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 64px;
+
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .information-text {
+        display: flex;
+        color: #423d3e;
+        gap: 32px;
+        flex: 1;
+    }
+
+    .information-text img {
+        object-fit: cover;
+        border-radius: 3%;
+        width: 200px;
+        height: 200px;
+    }
+
+
 
 
 
