@@ -165,10 +165,10 @@ a:hover {
 .main-recipe-section {
     display: flex;
     flex-direction: column;
-        
     text-align: center;
     margin-top: 88px;
     margin-bottom: 24px;
+
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -179,10 +179,6 @@ a:hover {
     width: auto;
     height: 300px;
 }
-
-/* .main-recipe-text {
-    margin-left: 32px;
-} */
     
 .button-green {
     background-color: #007e1e;
@@ -324,104 +320,25 @@ footer img {
     /* start page - section: main recipe */
 
     .main-recipe-section {
-        display: flex;
-        flex-direction: column;
-        
-        text-align: center;
         margin-top: 120px;
-        margin-bottom: 24px;
+
         padding-left: 64px;
         padding-right: 64px;
-    }
-    
-    .main-recipe-section img {
-        object-fit: cover;
-        border-radius: 3%;
-        width: auto;
-        height: 300px;
-    }
-
-    .main-recipe-text {
-        margin-left: 32px;
-    }
-    
-    .button-green {
-        background-color: #007e1e;
-        color: #ffffff;
-        font-size: 16px;
-        border: none;
-        padding: 10px 50px;
-    }
-
-    .button-green:hover {
-        background-color: #009e1e;
-        cursor: pointer;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
     
     /* start page - section: recipe overview */
 
     .recipe-overview-section {
-        text-align: center;
-        background-color: rgb(230, 230, 230);
-        padding-top: 8px;
-        padding-bottom: 24px;
-
         padding-left: 64px;
         padding-right: 64px;
-    }
-
-    .single-recipes {
-        display: flex;
-        flex-direction: column;
-        object-fit: cover;
-        justify-content: space-between;
-        font-weight: bold;
-        text-align: center;
-
-        align-items: center;
-        gap: 24px;
-    }
-
-    .single-recipes img {
-        display: flex;
-        object-fit: cover;
-        border-radius: 3%;
-        width: 200px;
-        height: 200px;
     }
 
     /* start page - section: information */
 
     .information-section {
-        text-align: center;
-        margin-top: 8px;
-        margin-bottom: 24px;
-
         padding-left: 64px;
         padding-right: 64px;
-    }    
-
-    .information-text {
-        display: flex;
-        flex-direction: column;
-        color: #423d3e;
-        gap: 32px;
-        flex: 1;
     }
-
-    .information-text img {
-        object-fit: cover;
-        border-radius: 3%;
-        width: auto;
-        height: 200px;
-    }
-
-
-
-
-
-
 
 
 
@@ -471,102 +388,46 @@ footer img {
     /* start page - section: main recipe */
 
     .main-recipe-section {
-        display: flex;
         flex-direction: row;
         text-align: left;
-        margin-top: 200px;
+        
+        margin-top: 192px;
         margin-bottom: 64px;
-
-        padding-left: 64px;
-        padding-right: 64px;
     }
     
     .main-recipe-section img {
-        object-fit: cover;
-        border-radius: 3%;
         width: 450px;
-        height: 300px;
     }
 
     .main-recipe-text {
         margin-left: 32px;
     }
 
-    .button-green {
-        background-color: #007e1e;
-        color: #ffffff;
-        font-size: 16px;
-        border: none;
-        padding: 10px 50px;
-    }
-
-    .button-green:hover {
-        background-color: #009e1e;
-        cursor: pointer;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    }
-
     /* start page - section: recipe overview */
 
     .recipe-overview-section {
-        text-align: center;
-        background-color: rgb(230, 230, 230);
-        padding-top: 16px;
+        padding-top: 44px;
         padding-bottom: 64px;
-
-        padding-left: 64px;
-        padding-right: 64px;
     }
 
     .single-recipes {
-        display: flex;
         flex-direction: row;
-        object-fit: cover;
-        justify-content: space-between;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .single-recipes img {
-        display: flex;
-        object-fit: cover;
-        border-radius: 3%;
-        width: 200px;
-        height: 200px;
     }
 
     /* start page - section: information */
 
     .information-section {
-        text-align: center;
-        margin-top: 16px;
+        margin-top: 44px;
         margin-bottom: 64px;
-
-        padding-left: 64px;
-        padding-right: 64px;
     }
 
     .information-text {
-        display: flex;
         flex-direction: row;
-        color: #423d3e;
+        align-items: flex-start;
+        text-align: left;
+        padding-top: 16px;
         gap: 32px;
-        flex: 1;
     }
-
-    .information-text img {
-        object-fit: cover;
-        border-radius: 3%;
-        width: 200px;
-        height: 200px;
-    }
-
-
-
-
-
-
-
 
 
 
