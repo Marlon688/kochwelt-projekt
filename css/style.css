@@ -1,0 +1,542 @@
+/* global */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway-Light.woff2') format('woff2'),
+        url('/assets/fonts/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Raleway';
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    color: #007e1e;
+    text-decoration-color: #007e1e;
+}
+
+
+
+/* mobile */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 64px;
+
+    padding-right: 16px;
+    padding-left: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-header img {
+    height: 36px;
+}
+
+.header-nav-links {
+    background-color: #ffffff;
+    position: fixed;
+    top: 64px;
+    right: -100%;
+
+    height: fit-content;
+    width: 100%;
+
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 16px;
+    transition: .3s ease;
+}
+
+.header-nav-links.active
+{
+    right: 0;
+}
+
+.ham-menu
+{
+    position: relative;
+    height: 36px;
+    width: 36px;
+}
+
+.ham-menu span
+{
+    height: 4px;
+    width: 100%;
+    background-color: #007e1e;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1)
+{
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3)
+{
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1)
+{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2)
+{
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3)
+{
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+
+
+
+.landing-page {
+    /* height: 300vh; */
+    flex: 1;
+}
+
+/* start page - section: main recipe */
+
+.main-recipe-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 88px;
+    margin-bottom: 24px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main-recipe-section img {
+    object-fit: cover;
+    border-radius: 3%;
+    width: auto;
+    height: 300px;
+}
+    
+.button-green {
+    background-color: #007e1e;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 50px;
+}
+
+.button-green:hover {
+    background-color: #009e1e;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* start page - section: recipe overview */
+
+.recipe-overview-section {
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding-top: 4px;
+    padding-bottom: 24px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.single-recipes {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    justify-content: space-between;
+    font-weight: bold;
+    text-align: center;
+
+    align-items: center;
+    gap: 24px;
+}
+
+.single-recipes img {
+    display: flex;
+    object-fit: cover;
+    border-radius: 3%;
+    width: 200px;
+    height: 200px;
+}
+
+/* start page - section: information */
+
+.information-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 24px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}    
+
+.information-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #423d3e;
+    flex: 1;
+
+    margin-top: 0;
+}
+
+.information-text img {
+    object-fit: cover;
+    border-radius: 3%;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+footer {
+    background-color: #423d3e;
+    height: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    height: 36px;
+}
+
+
+
+/* tablet */
+@media (min-width: 768px) {
+    
+    /* mehr Platz → mehr Layout */
+
+    a:hover {
+        text-decoration-thickness: 4px; 
+    }
+
+    .fixed-header {
+        height: 96px;
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+
+    .fixed-header img {
+        height: 64px;
+    }
+
+    .header-nav-links {
+        position: static;
+        padding-bottom: 8px;
+        justify-content: end;
+        flex-direction: row;
+        align-self: end;
+
+        font-weight: 500;
+
+        gap: 36px;
+    }
+
+    .ham-menu
+    {
+        display: none;
+    }
+
+
+
+
+
+    /* start page - section: main recipe */
+
+    .main-recipe-section {
+        margin-top: 120px;
+
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    
+    /* start page - section: recipe overview */
+
+    .recipe-overview-section {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    /* start page - section: information */
+
+    .information-section {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+
+
+
+
+    footer {
+        height: 96px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    footer img {
+        height: 64px;
+    }
+
+}
+
+
+/* desktop */
+@media (min-width: 1024px) 
+{
+   /* Desktop Erweiterungen */
+
+    a:hover {
+        text-decoration-thickness: 6px; 
+    }
+
+    .fixed-header {
+        height: 128px;
+    }
+
+    .fixed-header img {
+        height: 96px;
+    }
+
+    .header-nav-links {
+        font-weight: bold;
+        gap: 48px;
+    }
+
+    .ham-menu
+    {
+        display: none;
+    }
+
+
+    /* start page - section: main recipe */
+
+    .main-recipe-section {
+        flex-direction: row;
+        text-align: left;
+        
+        margin-top: 192px;
+        margin-bottom: 64px;
+    }
+    
+    .main-recipe-section img {
+        width: 450px;
+    }
+
+    .main-recipe-text {
+        margin-left: 32px;
+    }
+
+    /* start page - section: recipe overview */
+
+    .recipe-overview-section {
+        padding-top: 44px;
+        padding-bottom: 64px;
+    }
+
+    .single-recipes {
+        flex-direction: row;
+    }
+
+    /* start page - section: information */
+
+    .information-section {
+        margin-top: 44px;
+        margin-bottom: 64px;
+    }
+
+    .information-text {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        padding-top: 16px;
+        gap: 32px;
+    }
+
+
+
+
+
+    footer {
+        height: 128px;
+    }
+
+    footer img {
+        height: 96px;
+    }
+
+}
+
+
+/*contact-form*/
+
+.body-contact-form {
+            margin: 0;
+            background-color: #EFEFEF;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+        .contact-form-h2 {
+            text-align: center;
+        }
+
+        .contact-form-infomation {
+            text-align: center;
+        }
+
+        .contact-form-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form-style {
+            padding: 20px;
+            background-color: white;
+            max-width: 800px;
+            margin: auto 20px;
+            padding: 40px 20px;
+
+        }
+
+        .contact-form-input-style {
+            display: flex;
+            flex-direction: column;
+            background-color: #EFEFEF;
+            padding: 15px;
+            border: 1px solid #dadada;
+            border-radius: 10px;
+            gap: 5px;
+        }
+
+        .contact-form-input {
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-family: 'Raleway';
+        }
+
+        .contact-form-label {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .contact-form-textarea {
+            height: 400px;
+            resize: none;
+        }
+
+
+        .contact-form-input:focus {
+            outline: none;
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            src: url(../assets/fonts/Raleway-Regular.woff2) format(woff2);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #contact-form-button {
+            background-color: #008000;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        #contact-form-button:hover {
+            background-color: #006800;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            cursor: pointer;
+        }
