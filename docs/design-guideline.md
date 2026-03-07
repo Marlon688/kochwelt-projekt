@@ -11,15 +11,15 @@ To keep the layout consistent, we use a fixed spacing system.
 
 ### Mobile spacing
 
-Small spacing: 8px  
-Standard spacing: 16px  
-Large spacing: 24px  
-
-### Desktop spacing
-
 Small spacing: 16px  
 Standard spacing: 32px  
 Large spacing: 64px  
+
+### Desktop spacing
+
+Small spacing: 32px  
+Standard spacing: 64px  
+Large spacing: 128px  
 
 These values should be used for margins, paddings, and gaps whenever possible.
 
