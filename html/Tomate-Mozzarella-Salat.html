@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomate Mozarella Salat</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: white;
+            font-family: "Raleway", sans-serif;
+            margin: 0;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #1f8f2f;
+
+            border-bottom: 3px solid #1f8f2f;
+
+        }
+
+        main {
+            background-color: white;
+            padding: 40px 120px;
+            max-width: 1440px;
+            margin: 0 auto;
+            box-sizing: border-box;/
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .recipe-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .recipe-info {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .recipe-info span {
+            background: #eee;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .portion-box {
+            margin: 20px 0;
+        }
+
+        .portion-box input {
+            width: 60px;
+            padding: 6px;
+            margin: 0 10px;
+        }
+
+        .portion-box button {
+            background: #1f8f2f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.2s;
+
+        }
+
+        .ingredients {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        .ingredients li {
+            list-style: none;
+
+            padding: 12px 15px;
+            margin-bottom: 0px;
+            border-radius: 4px;
+        }
+
+        .ingredients li:nth-child(odd) {
+            background-color: rgb(239, 239, 239);
+        }
+
+        .ingredients li:nth-child(even) {
+            background-color: white;
+        }
+
+        .prep-info span {
+            background: #eee;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+
+        .author img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: 60px;
+            background: #333;
+            height: 120px;
+            max-width: 1440px;
+            margin: 60px auto 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="Kochwelt Logo" />
+        </div>
+
+        <nav>
+            <a class="navlink hide-mobile" href="#">Start</a>
+            <a class="navlink hide-mobile" href="#">Rezpt des Tages</a>
+            <a class="navlink hide-mobile" href="#">Kontakt</a>
+            <a class="navlink hide-mobile" href="#">Impressum</a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Tomate Mozzarella Salat</h1>
+
+        <img src="../assets/images/tomate-mozzarella-salat.png" class="recipe-img">
+
+
+        <div class="recipe-info">
+            <span><i class="fa-regular fa-clock"></i> 10 Min</span>
+            <span><i class="fa-solid fa-signal"></i> simpel</span>
+            <span><i class="fa-regular fa-calendar-days"></i> 06.03.2026</span>
+        </div>
+
+
+
+        <hr>
+
+
+        <div class="portion-box">
+            <label>Zutaten für</label>
+            <input type="number" value="4">
+            <button>Portionen</button>
+        </div>
+
+
+        <ul class="ingredients">
+
+            <li>4 Tomaten</li>
+            <li>2 Mozzarella Kugeln</li>
+            <li>3 EL Olivenöl</li>
+            <li>Salz</li>
+            <li>Pfeffer</li>
+            <li>Frischer Basilikum</li>
+            <li>Balsamico</li>
+
+
+        </ul>
+
+
+        <h2>Zubereitung</h2>
+
+        <div class="prep-info">
+            <span><i class="fa-regular fa-clock"></i> ca. 10 Minuten</span>
+            <span><i class="fa-regular fa-clock"></i> Gesamtzeit ca. 20 Minuten</span>
+        </div>
+
+
+        <p>
+            Tomaten waschen und in Scheiben schneiden. Mozzarella ebenfalls in Scheiben schneiden.
+            Tomaten und Mozzarella abwechselnd auf einem Teller anrichten. Mit Olivenöl beträufeln
+            und mit Salz und Pfeffer würzen. Frischen Basilikum und Balsamico darüber geben und servieren.
+        </p>
+
+
+        <h3>Rezept erstellt von</h3>
+
+        <div class="author">
+            <img src="../assets/images/Marlon.jpg" alt="Autor">
+            <span>Marlon</span>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
