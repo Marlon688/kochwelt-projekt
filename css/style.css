@@ -48,10 +48,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px; 
     color: #007e1e;
-    text-decoration-color: #007e1e;
+    box-shadow: 0px 5px 0px #007e1e;
 }
 
 
@@ -90,14 +88,14 @@ a:hover {
     height: fit-content;
     width: 100%;
 
-    font-weight: 400;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
+    padding-top: 16px;
+    padding-bottom: 16px;
     gap: 16px;
     transition: .3s ease;
 }
@@ -112,6 +110,7 @@ a:hover {
     position: relative;
     height: 36px;
     width: 36px;
+    cursor: pointer;
 }
 
 .ham-menu span
@@ -121,45 +120,42 @@ a:hover {
     background-color: #007e1e;
     border-radius: 25px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
     transition: .3s ease;
 }
 
-.ham-menu span:nth-child(1)
+.ham-menu span:nth-child(1) 
 {
-    top: 25%;
+    top: 8px;
 }
 
-.ham-menu span:nth-child(3)
+.ham-menu span:nth-child(2) 
 {
-    top: 75%;
+    top: 16px;
 }
 
-.ham-menu.active span:nth-child(1)
+.ham-menu span:nth-child(3) 
 {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+    top: 24px;
 }
 
-.ham-menu.active span:nth-child(2)
+.ham-menu.active span:nth-child(1) 
+{ 
+    width: 90%;
+    top: 16px;
+    transform: rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) 
 {
     opacity: 0;
 }
 
-.ham-menu.active span:nth-child(3)
+.ham-menu.active span:nth-child(3) 
 {
-    top: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
-}
-
-
-
-
-.landing-page {
-    /* height: 300vh; */
-    flex: 1;
+    width: 90%;
+    top: 16px;
+    transform: rotate(-45deg);
 }
 
 /* start page - section: main recipe */
@@ -188,6 +184,7 @@ button {
     font-size: 16px;
     border: none;
     padding: 10px 50px;
+    margin-top: 100px;
 }
 
 button:hover {
@@ -199,7 +196,7 @@ button:hover {
 
 .recipe-overview-section {
     text-align: center;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(239, 239, 239);
     padding-top: 4px;
     padding-bottom: 24px;
 
@@ -261,8 +258,10 @@ button:hover {
 
 
 
+
 footer {
     background-color: #423d3e;
+    color: #ffffff;
     height: 64px;
     padding-left: 16px;
     padding-right: 16px;
@@ -272,20 +271,40 @@ footer {
     align-items: center;
 }
 
+footer a
+{
+    color: #ffffff;
+}
+
+footer a:hover
+{
+    box-shadow: none;
+}
+
+footer p
+{
+    display: none;
+}
+
 footer img {
     height: 36px;
 }
 
+.footer-content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+}
 
+.hide-on-mobile
+{
+    display: none;
+}
 
 /* tablet */
 @media (min-width: 768px) {
-    
-    /* mehr Platz → mehr Layout */
-
-    a:hover {
-        text-decoration-thickness: 4px; 
-    }
 
     .fixed-header {
         height: 96px;
@@ -299,12 +318,10 @@ footer img {
 
     .header-nav-links {
         position: static;
-        padding-bottom: 8px;
+        padding-bottom: 5px;
         justify-content: end;
         flex-direction: row;
         align-self: end;
-
-        font-weight: 500;
 
         gap: 36px;
     }
@@ -351,8 +368,23 @@ footer img {
         padding-right: 64px;
     }
 
+    footer p
+    {
+        display: block;
+    }
+
     footer img {
         height: 64px;
+    }
+
+    .hide-on-mobile
+    {
+        display: block;
+    }
+
+    .hide-on-desktop
+    {
+        display: none;
     }
 
 }
@@ -376,13 +408,7 @@ footer img {
     }
 
     .header-nav-links {
-        font-weight: bold;
         gap: 48px;
-    }
-
-    .ham-menu
-    {
-        display: none;
     }
 
 
@@ -394,6 +420,9 @@ footer img {
         
         margin-top: 192px;
         margin-bottom: 64px;
+
+        padding-left: 120px;
+        padding-right: 120px;
     }
     
     .main-recipe-section img {
@@ -409,6 +438,9 @@ footer img {
     .recipe-overview-section {
         padding-top: 44px;
         padding-bottom: 64px;
+
+        padding-left: 120px;
+        padding-right: 120px;
     }
 
     .single-recipes {
@@ -420,6 +452,9 @@ footer img {
     .information-section {
         margin-top: 44px;
         margin-bottom: 64px;
+
+        padding-left: 120px;
+        padding-right: 120px;
     }
 
     .information-text {
