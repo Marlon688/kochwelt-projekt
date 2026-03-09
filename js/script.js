@@ -13,3 +13,4 @@ function cleanContact() {
   document.getElementById("contactform_email").value = "";
   document.getElementById("contactform_message").value = "";
 }
+

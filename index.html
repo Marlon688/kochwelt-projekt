@@ -15,12 +15,12 @@
 
     <header class="fixed-header">
 
-        <a href="index.html"><img src="assets/images/logo.png" alt="header logo"></a>
+        <a href="index.html"><img src="assets/images/logo.png" alt="kochwelt-logo"></a>
 
         <nav id="header-nav-links" class="header-nav-links">
             <a href="index.html">Start</a>
             <a href="html/meinRezept.html">Rezept des Tages</a>
-            <a href="#">Kontakt</a>
+            <a href="html/Kontaktformular.html">Kontakt</a>
             <a href="#">Impressum</a>
         </nav>
 
@@ -34,9 +34,7 @@
 
 
 
-    <main class="landing-page">
-
-        <!-- hier landing page einfügen hat aktuell 300vh durch css -->
+    <main>
 
         <!-- section: main recipe -->
 
@@ -100,8 +98,15 @@
 
 
     <footer>
-        <a href="index.html"><img src="assets/images/logo_small.png" alt="footer-logo"></a>
-        <a href="#">Datenschutz</a>
+
+        <a class="hide-on-desktop" href="index.html"><img src="assets/images/logo_small.png" alt="kochwelt-logo"></a>
+        <a class="hide-on-mobile" href="index.html"><img src="assets/images/logo.png" alt="kochwelt-logo"></a>
+
+        <div class="footer-content">
+            <p>© Kochwelt - Alle Rechte vorbehalten</p>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
