@@ -1,9 +1,9 @@
-/* global */
+
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Bold.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Bold.woff') format('woff');
+    src: url('../assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Regular.woff') format('woff');
+    src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Light.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Light.woff') format('woff');
+    src: url('../assets/fonts/Raleway-Light.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -256,10 +256,100 @@ a:hover {
     height: 200px;
 }
 
+/*contact-form*/
+
+.body-contact-form {
+    margin: 0;
+    background-color: #EFEFEF;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-form-h2 {
+    text-align: center;
+}
+
+.contact-form-infomation {
+    text-align: center;
+}
+
+.contact-form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form-style {
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin: auto 20px;
+    padding: 40px 20px;
+
+}
+
+.contact-form-input-style {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    padding: 15px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.contact-form-input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.contact-form-label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contact-form-textarea {
+    height: 400px;
+    resize: none;
+}
 
 
+.contact-form-input:focus {
+    outline: none;
+}
 
+#contact-form-button {
+    background-color: #008000;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+}
 
+<<<<<<< Updated upstream
+=======
+#contact-form-button:hover {
+    background-color: #006800;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/*footer*/
+
+>>>>>>> Stashed changes
 footer {
     background-color: #423d3e;
     height: 64px;
@@ -274,6 +364,8 @@ footer {
 footer img {
     height: 36px;
 }
+
+
 
 
 
@@ -444,99 +536,3 @@ footer img {
 }
 
 
-/*contact-form*/
-
-.body-contact-form {
-            margin: 0;
-            background-color: #EFEFEF;
-            font-family: 'Raleway', sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-
-        .contact-form-h2 {
-            text-align: center;
-        }
-
-        .contact-form-infomation {
-            text-align: center;
-        }
-
-        .contact-form-main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 1;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .contact-form-style {
-            padding: 20px;
-            background-color: white;
-            max-width: 800px;
-            margin: auto 20px;
-            padding: 40px 20px;
-
-        }
-
-        .contact-form-input-style {
-            display: flex;
-            flex-direction: column;
-            background-color: #EFEFEF;
-            padding: 15px;
-            border: 1px solid #dadada;
-            border-radius: 10px;
-            gap: 5px;
-        }
-
-        .contact-form-input {
-            border: none;
-            background: none;
-            font-size: 16px;
-            font-family: 'Raleway';
-        }
-
-        .contact-form-label {
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .contact-form-textarea {
-            height: 400px;
-            resize: none;
-        }
-
-
-        .contact-form-input:focus {
-            outline: none;
-        }
-
-        @font-face {
-            font-family: 'Raleway';
-            src: url(../assets/fonts/Raleway-Regular.woff2) format(woff2);
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        #contact-form-button {
-            background-color: #008000;
-            color: white;
-            padding: 10px 0;
-            border: none;
-            cursor: pointer;
-        }
-
-        #contact-form-button:hover {
-            background-color: #006800;
-            color: white;
-            padding: 10px 0;
-            border: none;
-            cursor: pointer;
-        }
