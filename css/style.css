@@ -29,7 +29,9 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: #007e1e #f1f1f1;/* (Daumen-Farbe) (Spur-Farbe) */
 }
+
 
 body {
     margin: 0;
@@ -176,8 +178,8 @@ a:hover {
     height: 300px;
 }
     
-.button-green {
-    background-color: #007e1e;
+button {
+    background-color: #008000;
     color: #ffffff;
     font-size: 16px;
     border: none;
@@ -185,10 +187,9 @@ a:hover {
     margin-top: 100px;
 }
 
-.button-green:hover {
+button:hover {
     background-color: #009e1e;
     cursor: pointer;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* start page - section: recipe overview */
@@ -483,7 +484,7 @@ footer img {
 
 .body-contact-form {
             margin: 0;
-            background-color: #EFEFEF;
+            background-color: white;
             font-family: 'Raleway', sans-serif;
             display: flex;
             flex-direction: column;
@@ -514,7 +515,7 @@ footer img {
 
         .contact-form-style {
             padding: 20px;
-            background-color: white;
+            background-color: #EFEFEF;
             max-width: 800px;
             margin: auto 20px;
             padding: 40px 20px;
@@ -524,9 +525,8 @@ footer img {
         .contact-form-input-style {
             display: flex;
             flex-direction: column;
-            background-color: #EFEFEF;
+            background-color: white;
             padding: 15px;
-            border: 1px solid #dadada;
             border-radius: 10px;
             gap: 5px;
         }
@@ -553,25 +553,12 @@ footer img {
             outline: none;
         }
 
-        @font-face {
-            font-family: 'Raleway';
-            src: url(../assets/fonts/Raleway-Regular.woff2) format(woff2);
-            font-weight: normal;
-            font-style: normal;
+
+
+        .input-required {
+            text-align: center;
         }
 
-        #contact-form-button {
-            background-color: #008000;
-            color: white;
-            padding: 10px 0;
-            border: none;
-            cursor: pointer;
-        }
 
-        #contact-form-button:hover {
-            background-color: #006800;
-            color: white;
-            padding: 10px 0;
-            border: none;
-            cursor: pointer;
-        }
+        
+        /*receipt-page*/
