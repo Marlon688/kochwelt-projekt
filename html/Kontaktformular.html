@@ -7,6 +7,7 @@
     <title>Kontaktformular</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 </head>
 
 <body class="body-contact-form" onload="cleanContact()">
@@ -17,29 +18,28 @@
 
             <h2 class="contact-form-h2">Kontaktiere uns</h2>
 
-            <p class="contact-form-infomation">Du hast Fragen zu einem Rezept, einen Fehler entdeckt oder eine Idee für
-                eine neue Funktion? Dann schreib uns gerne eine Nachricht über das Kontaktformular. Wir versuchen unsere
-                Seite stetig zu verbessern und freuen uns über jedes Feedback. Egal ob Vorschläge für neue Rezepte,
-                Hinweise zu Zutaten oder allgemeine Anmerkungen zur Website – wir lesen jede Nachricht.</p>
+            <p class="contact-form-infomation">Du hast Fragen zu einem Rezept? Dann schreib uns gerne eine Nachricht über das Kontaktformular. Wir versuchen unsere
+                Seite stetig zu verbessern und freuen uns über jedes Feedback.</p>
 
             <form class="contact-form" action="https://formspree.io/f/mzzpgzld" method="post">
 
                 <div class="contact-form-input-style">
-                    <label class="contact-form-label" for="contactform_name">NAME:*</label>
+                    <label class="contact-form-label" for="contactform_name">NAME: *</label>
                     <input class="contact-form-input" id="contactform_name" type="text" name="Name" required
                         placeholder="Gib hier deinen Namen an" pattern="[A-Za-z]+">
                 </div>
                 <div class="contact-form-input-style">
-                    <label class="contact-form-label" for="contactform_email">E-MAIL:*</label>
+                    <label class="contact-form-label" for="contactform_email">E-MAIL: *</label>
                     <input class="contact-form-input" id="contactform_email" type="email" name="E-Mail Adresse"
-                        placeholder="Gib hier deine E-Mail Adresse an">
+                        placeholder="Gib hier deine E-Mail Adresse an" required>
                 </div>
                 <div class="contact-form-input-style">
-                    <label class="contact-form-label" for="contactform_message">NACHRICHT:*</label>
+                    <label class="contact-form-label" for="contactform_message">NACHRICHT: *</label>
                     <textarea class="contact-form-input contact-form-textarea" id="contactform_message"
-                        name="Deine Nachricht" placeholder="Deine Nachricht an uns"></textarea>
+                        name="Deine Nachricht" placeholder="Deine Nachricht an uns" required></textarea>
                 </div>
-                <button id="contact-form-button" type="submit">Senden</button>
+                <p class="input-required">Felder mit einem * müssen ausgefüllt werden.</p>
+                <button class="button-green" id="contact-form-button" type="submit">Senden</button>
             </form>
 
         </section>
