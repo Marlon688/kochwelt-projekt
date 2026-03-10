@@ -52,7 +52,19 @@ a:hover {
     text-decoration-color: #007e1e;
 }
 
+table tr:nth-child(odd) {
+    background-color: #efefef;
+}
 
+table tr td {
+    text-align: end;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 /* mobile */
 
@@ -165,33 +177,22 @@ a:hover {
 .main-recipe-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 88px;
-    margin-bottom: 24px;
-
-    padding-left: 16px;
-    padding-right: 16px;
+    align-items: start;
 }
 
-.main-recipe-section img {
-    object-fit: cover;
-    border-radius: 3%;
-    width: auto;
-    height: 300px;
-}
-    
-.button-green {
-    background-color: #007e1e;
-    color: #ffffff;
-    font-size: 16px;
-    border: none;
-    padding: 10px 50px;
-}
+/* recipe of the day section */
 
-.button-green:hover {
-    background-color: #009e1e;
-    cursor: pointer;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+.recipe-of-the-day-section {
+    height: 100vh;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 16px;
+
+    gap: 16px;
 }
 
 /* start page - section: recipe overview */
@@ -264,37 +265,139 @@ a:hover {
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: start;
+    text-align: start;
+
+    gap: 16px;
 }
 
-.contact-form-h2 {
+/* single recipe page */
+
+.main-recipe-container {
+    padding: 16px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.recipe-info span {
+    background: #efefef;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.servings-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: flex-start;
+    text-align: start;
+}
+
+.servings-box input {
+    border-width: 2px;
+    border-style: solid;
     text-align: center;
+}
+
+.servings-box div {
+    display: flex;
+}
+
+.servings-box label {
+    padding-right: 8px;
+    align-self: center;
+}
+
+.spices-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-self: flex-end;
+    text-align: end;
+
+    gap: 8px;
+}
+
+.optionals-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: flex-start;
+    text-align: start;
+
+    gap: 8px;
+}
+
+.preperation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-self: flex-end;
+    text-align: end;
+    
+    gap: 8px;
+}
+
+.preperation-container ol {
+    text-align: justify;
+}
+
+.prep-info span {
+    background: #efefef;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.tipps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: flex-start;
+    text-align: start;
+
+    gap: 8px;
+}
+
+
+/* contact page */
+
+.contact-form-main {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-style {
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #efefef;
+
+    gap: 16px;
 }
 
 .contact-form-infomation {
     text-align: center;
 }
 
-.contact-form-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.contact-form-style {
-    padding: 20px;
-    background-color: white;
-    max-width: 800px;
-    margin: auto 20px;
-    padding: 40px 20px;
-
 }
 
 .contact-form-input-style {
@@ -329,27 +432,13 @@ a:hover {
     outline: none;
 }
 
-#contact-form-button {
-    background-color: #008000;
-    color: white;
-    padding: 10px 0;
-    border: none;
-    cursor: pointer;
+.input-required {
+    text-align: center;
 }
 
-<<<<<<< Updated upstream
-=======
-#contact-form-button:hover {
-    background-color: #006800;
-    color: white;
-    padding: 10px 0;
-    border: none;
-    cursor: pointer;
-}
 
-/*footer*/
 
->>>>>>> Stashed changes
+
 footer {
     background-color: #423d3e;
     height: 64px;
@@ -371,12 +460,32 @@ footer img {
 
 /* tablet */
 @media (min-width: 768px) {
-    
-    /* mehr Platz → mehr Layout */
 
-    a:hover {
-        text-decoration-thickness: 4px; 
+    body {
+        padding-top: 96px;
     }
+
+    img {
+        max-width: 384px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    /* header */
 
     .fixed-header {
         height: 96px;
@@ -405,37 +514,48 @@ footer img {
         display: none;
     }
 
-
-
-
-
-    /* start page - section: main recipe */
-
-    .main-recipe-section {
-        margin-top: 120px;
-
-        padding-left: 64px;
+    /* hero section */
+    .hero-section {
         padding-right: 64px;
+        padding-left: 64px;
     }
-    
-    /* start page - section: recipe overview */
+
+    /* recipe of the day section */
+
+    .recipe-of-the-day-section {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+
+    /* recipe overview section */
 
     .recipe-overview-section {
-        padding-left: 64px;
         padding-right: 64px;
+        padding-left: 64px;
     }
 
-    /* start page - section: information */
+    /* information section */
 
     .information-section {
         padding-left: 64px;
         padding-right: 64px;
     }
 
+    /* single recipe page */
 
+    .main-recipe-container {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 
+    /* contact page */
 
+    .contact-form-main {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 
+    /* footer */
     footer {
         height: 96px;
         padding-left: 64px;
@@ -446,19 +566,48 @@ footer img {
         height: 64px;
     }
 
-}
-
-
-/* desktop */
-@media (min-width: 1024px) 
-{
-   /* Desktop Erweiterungen */
-
-    a:hover {
-        text-decoration-thickness: 6px; 
+    .hide-on-mobile {
+        display: block;
     }
 
+    .hide-on-desktop {
+        display: none;
+    }
+
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+    body {
+        padding-top: 128px;
+    }
+
+    img {
+        max-width: 512px;
+    }
+
+    h1 {
+        font-size: 96px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    h4{
+        font-size: 32px;
+    }
+
+    /* header */
+
     .fixed-header {
+        padding-left: 128px;
+        padding-right: 128px;
         height: 128px;
     }
 
@@ -471,62 +620,52 @@ footer img {
         gap: 48px;
     }
 
-    .ham-menu
-    {
-        display: none;
+    /* hero section */
+    .hero-section {
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
+    /* recipe of the day section */
 
-    /* start page - section: main recipe */
-
-    .main-recipe-section {
-        flex-direction: row;
-        text-align: left;
-        
-        margin-top: 192px;
-        margin-bottom: 64px;
-    }
-    
-    .main-recipe-section img {
-        width: 450px;
+    .recipe-of-the-day-section {
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
-    .main-recipe-text {
-        margin-left: 32px;
-    }
-
-    /* start page - section: recipe overview */
+    /* recipe overview section */
 
     .recipe-overview-section {
-        padding-top: 44px;
-        padding-bottom: 64px;
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
-    .single-recipes {
-        flex-direction: row;
-    }
-
-    /* start page - section: information */
+    /* information section */
 
     .information-section {
-        margin-top: 44px;
-        margin-bottom: 64px;
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
-    .information-text {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        padding-top: 16px;
-        gap: 32px;
+    /* single recipe page */
+
+    .main-recipe-container {
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
+    /* contact page */
 
+    .contact-form-main {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
 
-
-
+    /* footer */
     footer {
-        height: 128px;
+        height: 96px;
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
     footer img {
@@ -534,5 +673,4 @@ footer img {
     }
 
 }
-
 
