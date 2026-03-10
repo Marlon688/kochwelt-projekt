@@ -1,4 +1,5 @@
 let basePortions = 4;
+
 function calculatePortions() {
 
 let portions = document.getElementById("portionInput").value;
@@ -28,7 +29,5 @@ ingredients.forEach((ingredient) => {
     }
 
     });
-
-
-
 }
+
