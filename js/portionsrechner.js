@@ -6,8 +6,7 @@ let portions = document.getElementById("portionInput").value;
 if (portions < 1) {
     portions = 1;
     document.getElementById("portionInput").value = 1;
-    alert("Bitte mindestens 1 Portion eingeben");
-    return
+    
 }
 let factor = portions / basePortions;
 
