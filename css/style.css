@@ -355,7 +355,7 @@ ul {
     align-self: flex-start;
 }
 
-.servings-box div {
+.servings-box form {
     display: flex;
     align-items: center;
     gap: 0;
