@@ -1,564 +1,530 @@
 /* global */
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Bold.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src:
+    url("/assets/fonts/Raleway-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src:
+    url("/assets/fonts/Raleway-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Light.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src:
+    url("/assets/fonts/Raleway-Light.woff2") format("woff2"),
+    url("/assets/fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
-    scroll-behavior: smooth;
-    scrollbar-color: #007e1e #f1f1f1;/* (Daumen-Farbe) (Spur-Farbe) */
+  scroll-behavior: smooth;
+  scrollbar-color: #007e1e #f1f1f1; /* (Daumen-Farbe) (Spur-Farbe) */
 }
 
-
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: 'Raleway';
-    font-size: 16px;
-    color: black;
+  font-family: "Raleway";
+  font-size: 16px;
+  color: black;
 }
 
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #007e1e;
-    box-shadow: 0px 5px 0px #007e1e;
+  color: #007e1e;
+  box-shadow: 0px 5px 0px #007e1e;
 }
-
-
 
 /* mobile */
 
 .fixed-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 
-    height: 64px;
+  height: 64px;
 
-    padding-right: 16px;
-    padding-left: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    background-color: #ffffff;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .fixed-header img {
-    height: 36px;
+  height: 36px;
 }
 
 .header-nav-links {
-    background-color: #ffffff;
-    position: fixed;
-    top: 64px;
-    right: -100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 64px;
+  right: -100%;
 
-    height: fit-content;
-    width: 100%;
+  height: fit-content;
+  width: 100%;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
-    gap: 16px;
-    transition: .3s ease;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 16px;
+  transition: 0.3s ease;
 }
 
-.header-nav-links.active
-{
-    right: 0;
+.header-nav-links.active {
+  right: 0;
 }
 
-.ham-menu
-{
-    position: relative;
-    height: 36px;
-    width: 36px;
-    cursor: pointer;
+.ham-menu {
+  position: relative;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
 }
 
-.ham-menu span
-{
-    height: 4px;
-    width: 100%;
-    background-color: #007e1e;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    transition: .3s ease;
+.ham-menu span {
+  height: 4px;
+  width: 100%;
+  background-color: #007e1e;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease;
 }
 
-.ham-menu span:nth-child(1) 
-{
-    top: 8px;
+.ham-menu span:nth-child(1) {
+  top: 8px;
 }
 
-.ham-menu span:nth-child(2) 
-{
-    top: 16px;
+.ham-menu span:nth-child(2) {
+  top: 16px;
 }
 
-.ham-menu span:nth-child(3) 
-{
-    top: 24px;
+.ham-menu span:nth-child(3) {
+  top: 24px;
 }
 
-.ham-menu.active span:nth-child(1) 
-{ 
-    width: 90%;
-    top: 16px;
-    transform: rotate(45deg);
+.ham-menu.active span:nth-child(1) {
+  width: 90%;
+  top: 16px;
+  transform: rotate(45deg);
 }
 
-.ham-menu.active span:nth-child(2) 
-{
-    opacity: 0;
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
 }
 
-.ham-menu.active span:nth-child(3) 
-{
-    width: 90%;
-    top: 16px;
-    transform: rotate(-45deg);
+.ham-menu.active span:nth-child(3) {
+  width: 90%;
+  top: 16px;
+  transform: rotate(-45deg);
 }
 
 /* start page - section: main recipe */
 
 .main-recipe-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 88px;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 88px;
+  margin-bottom: 24px;
 
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .main-recipe-section img {
-    object-fit: cover;
-    border-radius: 3%;
-    width: auto;
-    height: 300px;
+  object-fit: cover;
+  border-radius: 3%;
+  width: auto;
+  height: 300px;
 }
-    
+
 button {
-    background-color: #008000;
-    color: #ffffff;
-    font-size: 16px;
-    border: none;
-    padding: 10px 50px;
-    margin-top: 100px;
+  background-color: #008000;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  padding: 10px 50px;
+  margin-top: 100px;
 }
 
 button:hover {
-    background-color: #009e1e;
-    cursor: pointer;
+  background-color: #009e1e;
+  cursor: pointer;
 }
 
 /* start page - section: recipe overview */
 
 .recipe-overview-section {
-    text-align: center;
-    background-color: rgb(239, 239, 239);
-    padding-top: 4px;
-    padding-bottom: 24px;
+  text-align: center;
+  background-color: rgb(239, 239, 239);
+  padding-top: 4px;
+  padding-bottom: 24px;
 
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .single-recipes {
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;
-    justify-content: space-between;
-    font-weight: bold;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  justify-content: space-between;
+  font-weight: bold;
+  text-align: center;
 
-    align-items: center;
-    gap: 24px;
+  align-items: center;
+  gap: 24px;
 }
 
 .single-recipes img {
-    display: flex;
-    object-fit: cover;
-    border-radius: 3%;
-    width: 200px;
-    height: 200px;
+  display: flex;
+  object-fit: cover;
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;
 }
 
 /* start page - section: information */
 
 .information-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 4px;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 24px;
 
-    padding-left: 16px;
-    padding-right: 16px;
-}    
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
 .information-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #423d3e;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #423d3e;
+  flex: 1;
 
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .information-text img {
-    object-fit: cover;
-    border-radius: 3%;
-    width: 200px;
-    height: 200px;
+  object-fit: cover;
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;
 }
-
-
-
-
-
 
 footer {
-    background-color: #423d3e;
-    color: #ffffff;
-    height: 64px;
-    padding-left: 16px;
-    padding-right: 16px;
+  background-color: #423d3e;
+  color: #ffffff;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer a
-{
-    color: #ffffff;
+footer a {
+  color: #ffffff;
 }
 
-footer a:hover
-{
-    box-shadow: none;
+footer a:hover {
+  box-shadow: none;
 }
 
-footer p
-{
-    display: none;
+footer p {
+  display: none;
 }
 
 footer img {
-    height: 36px;
+  height: 36px;
 }
 
-.footer-content
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: end;
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
 }
 
-.hide-on-mobile
-{
-    display: none;
+.hide-on-mobile {
+  display: none;
 }
 
 /* tablet */
 @media (min-width: 768px) {
+  .fixed-header {
+    height: 96px;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
 
-    .fixed-header {
-        height: 96px;
-        padding-right: 64px;
-        padding-left: 64px;
-    }
+  .fixed-header img {
+    height: 64px;
+  }
 
-    .fixed-header img {
-        height: 64px;
-    }
+  .header-nav-links {
+    position: static;
+    padding-bottom: 5px;
+    justify-content: end;
+    flex-direction: row;
+    align-self: end;
 
-    .header-nav-links {
-        position: static;
-        padding-bottom: 5px;
-        justify-content: end;
-        flex-direction: row;
-        align-self: end;
+    gap: 36px;
+  }
 
-        gap: 36px;
-    }
+  .ham-menu {
+    display: none;
+  }
 
-    .ham-menu
-    {
-        display: none;
-    }
+  /* start page - section: main recipe */
 
+  .main-recipe-section {
+    margin-top: 120px;
 
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
+  /* start page - section: recipe overview */
 
+  .recipe-overview-section {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
-    /* start page - section: main recipe */
+  /* start page - section: information */
 
-    .main-recipe-section {
-        margin-top: 120px;
+  .information-section {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-    
-    /* start page - section: recipe overview */
+  footer {
+    height: 96px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
-    .recipe-overview-section {
-        padding-left: 64px;
-        padding-right: 64px;
-    }
+  footer p {
+    display: block;
+  }
 
-    /* start page - section: information */
+  footer img {
+    height: 64px;
+  }
 
-    .information-section {
-        padding-left: 64px;
-        padding-right: 64px;
-    }
+  .hide-on-mobile {
+    display: block;
+  }
 
-
-
-
-
-    footer {
-        height: 96px;
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-
-    footer p
-    {
-        display: block;
-    }
-
-    footer img {
-        height: 64px;
-    }
-
-    .hide-on-mobile
-    {
-        display: block;
-    }
-
-    .hide-on-desktop
-    {
-        display: none;
-    }
-
+  .hide-on-desktop {
+    display: none;
+  }
 }
-
 
 /* desktop */
-@media (min-width: 1024px) 
-{
-   /* Desktop Erweiterungen */
+@media (min-width: 1024px) {
+  /* Desktop Erweiterungen */
 
-    a:hover {
-        text-decoration-thickness: 6px; 
-    }
+  a:hover {
+    text-decoration-thickness: 6px;
+  }
 
-    .fixed-header {
-        height: 128px;
-    }
+  .fixed-header {
+    height: 128px;
+  }
 
-    .fixed-header img {
-        height: 96px;
-    }
+  .fixed-header img {
+    height: 96px;
+  }
 
-    .header-nav-links {
-        gap: 48px;
-    }
+  .header-nav-links {
+    gap: 48px;
+  }
 
+  /* start page - section: main recipe */
 
-    /* start page - section: main recipe */
+  .main-recipe-section {
+    flex-direction: row;
+    text-align: left;
 
-    .main-recipe-section {
-        flex-direction: row;
-        text-align: left;
-        
-        margin-top: 192px;
-        margin-bottom: 64px;
+    margin-top: 192px;
+    margin-bottom: 64px;
 
-        padding-left: 120px;
-        padding-right: 120px;
-    }
-    
-    .main-recipe-section img {
-        width: 450px;
-    }
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 
-    .main-recipe-text {
-        margin-left: 32px;
-    }
+  .main-recipe-section img {
+    width: 450px;
+  }
 
-    /* start page - section: recipe overview */
+  .main-recipe-text {
+    margin-left: 32px;
+  }
 
-    .recipe-overview-section {
-        padding-top: 44px;
-        padding-bottom: 64px;
+  /* start page - section: recipe overview */
 
-        padding-left: 120px;
-        padding-right: 120px;
-    }
+  .recipe-overview-section {
+    padding-top: 44px;
+    padding-bottom: 64px;
 
-    .single-recipes {
-        flex-direction: row;
-    }
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 
-    /* start page - section: information */
+  .single-recipes {
+    flex-direction: row;
+  }
 
-    .information-section {
-        margin-top: 44px;
-        margin-bottom: 64px;
+  /* start page - section: information */
 
-        padding-left: 120px;
-        padding-right: 120px;
-    }
+  .information-section {
+    margin-top: 44px;
+    margin-bottom: 64px;
 
-    .information-text {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        padding-top: 16px;
-        gap: 32px;
-    }
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 
+  .information-text {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 16px;
+    gap: 32px;
+  }
 
+  footer {
+    height: 128px;
+  }
 
-
-
-    footer {
-        height: 128px;
-    }
-
-    footer img {
-        height: 96px;
-    }
-
+  footer img {
+    height: 96px;
+  }
 }
-
 
 /*contact-form*/
 
 .body-contact-form {
-            margin: 0;
-            background-color: white;
-            font-family: 'Raleway', sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+  margin: 0;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+.contact-form-h2 {
+  text-align: center;
+}
 
-        .contact-form-h2 {
-            text-align: center;
-        }
+.contact-form-infomation {
+  text-align: center;
+}
 
-        .contact-form-infomation {
-            text-align: center;
-        }
+.contact-form-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
 
-        .contact-form-main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 1;
-        }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+.contact-form-style {
+  padding: 20px;
+  background-color: #efefef;
+  max-width: 800px;
+  margin: 192px 20px 80px;
+  padding: 40px 20px;
+}
 
-        .contact-form-style {
-            padding: 20px;
-            background-color: #EFEFEF;
-            max-width: 800px;
-            margin: auto 20px;
-            padding: 40px 20px;
+.contact-form-input-style {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  gap: 5px;
+}
 
-        }
+.contact-form-input {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-family: "Raleway";
+}
 
-        .contact-form-input-style {
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            gap: 5px;
-        }
+.contact-form-label {
+  font-size: 12px;
+  font-weight: bold;
+}
 
-        .contact-form-input {
-            border: none;
-            background: none;
-            font-size: 16px;
-            font-family: 'Raleway';
-        }
+.contact-form-textarea {
+  height: 400px;
+  resize: none;
+}
 
-        .contact-form-label {
-            font-size: 12px;
-            font-weight: bold;
-        }
+.contact-form-input:focus {
+  outline: none;
+}
 
-        .contact-form-textarea {
-            height: 400px;
-            resize: none;
-        }
+.input-required {
+  text-align: center;
+}
 
+/*imprint-section*/
 
-        .contact-form-input:focus {
-            outline: none;
-        }
+.imprint {
+  padding: 0 120px;
+  margin-top: 192px;
+  margin-bottom: 80px;
+}
 
+@media screen and (max-width: 700px) {
+  .imprint {
+    padding: 0 60px;
+    margin-top: 192px;
+  }
+}
 
-
-        .input-required {
-            text-align: center;
-        }
-
-
-        
-        /*receipt-page*/
+/*receipt-page*/
