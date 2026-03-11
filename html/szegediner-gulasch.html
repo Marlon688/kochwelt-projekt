@@ -54,65 +54,65 @@
         <div class="servings-box">
             <h3>Zutaten für wieviel</h3>
             
-            <div>
-                <label for="servings">Personen</label>
-                <input id="servings" type="number" value="4" min="1" max="100" oninput="calculatePortions()">
-                <button onclick="calculatePortions()">Portionen</button>
-            </div>
+            <form id="servings-form" action="#">
+                <label for="servings-input">Personen</label>
+                <input id="servings-input" type="number" value="4" min="1" max="100" required>
+                <button id="servings-button" type="submit">Portionen</button>
+            </form>
 
         </div>
 
         <table>
             <tbody>
                 <tr>
-                    <td>500</td>
-                    <td>g</td>
-                    <td>Schweinegulasch</td>
+                    <td class="amount">500</td>
+                    <td class="unit">g</td>
+                    <td class="name">Schweinegulasch</td>
                 </tr>
                 <tr>
-                    <td>500</td>
-                    <td>g</td>
-                    <td>Sauerkraut</td>
+                    <td class="amount">500</td>
+                    <td class="unit">g</td>
+                    <td class="name">Sauerkraut</td>
                 </tr>
                 <tr>
-                    <td>1 - 2</td>
-                    <td>Stk.</td>
-                    <td>Zwiebel(n)</td>
+                    <td class="amount">1 - 2</td>
+                    <td class="unit">Stk.</td>
+                    <td class="name">Zwiebel(n)</td>
                 </tr>
                 <tr>
-                    <td>1 - 2</td>
-                    <td>Stk.</td>
-                    <td>Knoblauchzehe(n)</td>
+                    <td class="amount">1 - 2</td>
+                    <td class="unit">Stk.</td>
+                    <td class="name">Knoblauchzehe(n)</td>
                 </tr>
                 <tr>
-                    <td>100</td>
-                    <td>g</td>
-                    <td>Tomatenmark</td>
+                    <td class="amount">100</td>
+                    <td class="unit">g</td>
+                    <td class="name">Tomatenmark</td>
                 </tr>
                 <tr>
-                    <td>100</td>
-                    <td>ml</td>
-                    <td>Weißwein</td>
+                    <td class="amount">100</td>
+                    <td class="unit">ml</td>
+                    <td class="name">Weißwein</td>
                 </tr>
                 <tr>
-                    <td>500</td>
-                    <td>ml</td>
-                    <td>Brühe (Gemüse, o.ä.)</td>
+                    <td class="amount">500</td>
+                    <td class="unit">ml</td>
+                    <td class="name">Brühe (Gemüse, o.ä.)</td>
                 </tr>
                 <tr>
-                    <td>50</td>
-                    <td>ml</td>
-                    <td>Öl</td>
+                    <td class="amount">50</td>
+                    <td class="unit">ml</td>
+                    <td class="name">Öl</td>
                 </tr>
                 <tr>
-                    <td>50</td>
-                    <td>g</td>
-                    <td>Butter</td>
+                    <td class="amount">50</td>
+                    <td class="unit">g</td>
+                    <td class="name">Butter</td>
                 </tr>
                 <tr>
-                    <td>50</td>
-                    <td>g</td>
-                    <td>Mehl</td>
+                    <td class="amount">50</td>
+                    <td class="unit">g</td>
+                    <td class="name">Mehl</td>
                 </tr> 
             </tbody>
         </table>
@@ -196,7 +196,9 @@
         </div>
     </footer>
 
+
     <script src="../js/script.js"></script>
+    <script src="../js/recipe-calculator.js"></script>
 
 </body>
 
