@@ -596,13 +596,26 @@ hr {
     font-size: 14px;
 }
 
+.portion-button {
+    background-color: #008000;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 50px;
+    margin-top: 30px;
+    width: 150px;
+
+
+}
+
 .portion-box {
     margin: 20px 0;
 }
 
 .portion-box input {
-    width: 60px;
-    padding: 6px;
+    width: 130px;
+    padding: 9px;
+    border-radius: 4px 0 0 4px;
    margin: 10px -10px 10px 15px;
 }
 
@@ -611,7 +624,7 @@ hr {
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
+    
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.2s;
@@ -746,7 +759,5 @@ hr {
 @media (min-width:768px) and (max-width:1280px) {
     .recipe-main {
         padding: 140px 100px 100px 100px;
-
-
-
     }
+}
