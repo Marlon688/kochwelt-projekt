@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -16,75 +16,114 @@
 
     <header class="fixed-header">
 
-        <a href="index.html"><img src="assets/images/logo.png" alt="kochwelt-logo"></a>
+            <a class="image-link" href="index.html"><img src="assets/images/logo.png" alt="kochwelt-logo"></a>
 
-        <nav id="header-nav-links" class="header-nav-links">
-            <a href="index.html">Start</a>
-            <a href="html/meinRezept.html">Rezept des Tages</a>
-            <a href="html/Kontaktformular.html">Kontakt</a>
-            <a href="#">Impressum</a>
-        </nav>
+            <nav id="header-nav-links" class="header-nav-links">
 
-        <div id="ham-menu" class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+                <a href="index.html">Start</a>
+                <a href="/html/Menemen.html">Rezept des Tages</a>
+                <!-- <a href="#tipps">Tipps und Tricks</a> -->
+                <a href="contact.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+            </nav>
+
+            <div id="ham-menu" class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
     </header>
 
-
-
     <main>
 
-        <!-- section: main recipe -->
+        <!-- hero section -->
 
-        <section class="main-recipe-section">
+        <!-- <section class="hero-section">
+
+            <h1>Kochwelt</h1>
+            <p>Tipps, Tricks & Rezepte</p>
+
+        </section> -->
+
+        <!-- recipe of the day section -->
+
+        <section id="recipe-of-the-day-section" class="recipe-of-the-day-section">
+
+            <h2>Rezept des Tages</h2>
+
+            <h3>Name deines Rezeptes</h3>
 
             <img src="./assets/images/croissant.jpg" alt="recipe image">
+            
+            <p>Das ist ein Platzhalter für eine kurze Beschreibung des Rezepts.</p>
 
-            <div class="main-recipe-text">
-                <h2>Name des Rezepts</h2>
-                <p>Das ist ein Platzhalter für eine kurze Beschreibung des Rezepts.</p>
-                <a href="./html/meinRezept.html"><button class="button-green">Rezept öffnen</button></a>
-            </div>
+            <button>Rezept öffnen</button>
             
         </section>
 
-        <!-- section: recipe overview -->
+        <!-- recipe overview section -->
 
         <section class="recipe-overview-section">
 
             <h2>Lust auf was Neues?</h2>
 
-            <div class="single-recipes">
-                <a href="./html/meinRezept.html">
-                    <img src="./assets/images/croissant.jpg" alt="recipe image">
-                    Rezept 1
-                </a>
+            <div class="recipe-container">
+                
+                <div class="recipe-item">
+                    <img src="./assets/images/szegediner-gulasch.jpg" alt="recipe image">
+                    <p>Szegediner Gulasch</p>
+                    <a href="html/szegediner-gulasch.html"><button>Rezept öffnen</button></a>
+                </div>
 
-                <a href="./html/meinRezept.html">
-                    <img src="./assets/images/croissant.jpg" alt="recipe image">
-                    Rezept 2
-                </a>
+                <div class="recipe-item">
+                    <img src="./assets/images/tomate-mozzarella-salat.png" alt="recipe image">
+                    <p>Tomate Mozzarella Salat</p>
+                    <a href=""><button>Rezept öffnen</button></a>
+                </div>
 
-                <a href="./html/meinRezept.html">
-                    <img src="./assets/images/croissant.jpg" alt="recipe image">
-                    Rezept 3
-                </a>              
+                <div class="recipe-item">
+                    <img src="./assets/images/menemen.jpg" alt="recipe image">
+                    <p>Menemen</p>
+                    <a href=""><button>Rezept öffnen</button></a>
+                </div>
+
             </div>
 
         </section>
 
-        <!-- section: information  -->
+        <!-- information section  -->
 
-        <section class="information-section">
+        <section id="tipps" class="information-section">
 
-            <h2>Beispieltext - Was ist besser?</h2>
+            <h2>Pfanne vs. Wok - Was ist besser?</h2>
 
-            <div class="information-text">
-                <p class="information-text">Das ist ein Platzhalter für eine Information oder für einen Hinweis.</p>
-                <img src="./assets/images/wok.jpg" alt="recipe image">
+            <div class="information-container">
+
+                <div class="information-item-right">
+                    <img src="./assets/images/pan.jpg" alt="recipe image">
+
+                    <div class="item-text-right">
+                        <h3>Pfanne</h3>
+                        <p>Sorgt für eine gleichmäßige Hitzeverteilung und eignet sich vor allem für klassisches Braten.
+                            Je nach Form, flacher Rand für Omlettes oder höherer Rand für Pasta und Saucen,
+                            ist sie auf bestimmte Gerichte spezialisiert
+                        </p>
+                    </div>
+                </div>
+
+                <div class="information-item-left"> 
+                    <img src="./assets/images/wok-2.jpg" alt="">
+
+                    <div class="item-text-left">
+                        <h3>Wok</h3>
+                        <p>
+                            Erhitzt sich schnell und arbeitet mit wechselnder, oft sehr hoher Hitze, wodurch Zutaten meist geschwenkt statt gewendet werden.
+                            Durch seine tiefe Form ist er vielseitig einsetzbar z.B. zum Braten, Dämpfen, Frittieren oder schnellen Anrösten.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
         </section>
@@ -100,8 +139,8 @@
 
         <div class="footer-content">
             <p>© Kochwelt - Alle Rechte vorbehalten</p>
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutz</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="privacy.html">Datenschutz</a>
         </div>
     </footer>
 
