@@ -424,6 +424,20 @@ ul {
     padding-left: 24px;
 }
 
+.author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+}
+
+.author img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 /* contact page */
 .contact-form-main {
