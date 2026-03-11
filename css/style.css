@@ -31,8 +31,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scrollbar-color: #007e1e #f1f1f1; /* (Daumen-Farbe) (Spur-Farbe) */
+    scroll-behavior: smooth;
+    scrollbar-color: #007e1e #f1f1f1;/* (Daumen-Farbe) (Spur-Farbe) */
 }
 
 body {
@@ -100,53 +100,62 @@ a:hover {
   transition: 0.3s ease;
 }
 
-.header-nav-links.active {
-  right: 0;
+.header-nav-links.active
+{
+    right: 0;
 }
 
-.ham-menu {
-  position: relative;
-  height: 36px;
-  width: 36px;
-  cursor: pointer;
+.ham-menu
+{
+    position: relative;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
 }
 
-.ham-menu span {
-  height: 4px;
-  width: 100%;
-  background-color: #007e1e;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  transition: 0.3s ease;
+.ham-menu span
+{
+    height: 4px;
+    width: 100%;
+    background-color: #007e1e;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    transition: .3s ease;
 }
 
-.ham-menu span:nth-child(1) {
-  top: 8px;
+.ham-menu span:nth-child(1) 
+{
+    top: 8px;
 }
 
-.ham-menu span:nth-child(2) {
-  top: 16px;
+.ham-menu span:nth-child(2) 
+{
+    top: 16px;
 }
 
-.ham-menu span:nth-child(3) {
-  top: 24px;
+.ham-menu span:nth-child(3) 
+{
+    top: 24px;
 }
 
-.ham-menu.active span:nth-child(1) {
-  width: 90%;
-  top: 16px;
-  transform: rotate(45deg);
+.ham-menu.active span:nth-child(1) 
+{ 
+    width: 90%;
+    top: 16px;
+    transform: rotate(45deg);
 }
 
-.ham-menu.active span:nth-child(2) {
-  opacity: 0;
+.ham-menu.active span:nth-child(2) 
+{
+    opacity: 0;
 }
 
-.ham-menu.active span:nth-child(3) {
-  width: 90%;
-  top: 16px;
-  transform: rotate(-45deg);
+.ham-menu.active span:nth-child(3) 
+{
+    width: 90%;
+    top: 16px;
+    transform: rotate(-45deg);
 }
 
 /* start page - section: main recipe */
@@ -224,9 +233,9 @@ button:hover {
   margin-top: 4px;
   margin-bottom: 24px;
 
-  padding-left: 16px;
-  padding-right: 16px;
-}
+    padding-left: 16px;
+    padding-right: 16px;
+}    
 
 .information-text {
   display: flex;
@@ -257,31 +266,36 @@ footer {
   align-items: center;
 }
 
-footer a {
-  color: #ffffff;
+footer a
+{
+    color: #ffffff;
 }
 
-footer a:hover {
-  box-shadow: none;
+footer a:hover
+{
+    box-shadow: none;
 }
 
-footer p {
-  display: none;
+footer p
+{
+    display: none;
 }
 
 footer img {
   height: 36px;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: end;
+.footer-content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
 }
 
-.hide-on-mobile {
-  display: none;
+.hide-on-mobile
+{
+    display: none;
 }
 
 /* tablet */
@@ -306,20 +320,25 @@ footer img {
     gap: 36px;
   }
 
-  .ham-menu {
-    display: none;
-  }
+    .ham-menu
+    {
+        display: none;
+    }
+
+
+
+
 
   /* start page - section: main recipe */
 
   .main-recipe-section {
     margin-top: 120px;
 
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
-  /* start page - section: recipe overview */
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    
+    /* start page - section: recipe overview */
 
   .recipe-overview-section {
     padding-left: 64px;
@@ -339,30 +358,35 @@ footer img {
     padding-right: 64px;
   }
 
-  footer p {
-    display: block;
-  }
+    footer p
+    {
+        display: block;
+    }
 
   footer img {
     height: 64px;
   }
 
-  .hide-on-mobile {
-    display: block;
-  }
+    .hide-on-mobile
+    {
+        display: block;
+    }
 
-  .hide-on-desktop {
-    display: none;
-  }
+    .hide-on-desktop
+    {
+        display: none;
+    }
+
 }
 
 /* desktop */
-@media (min-width: 1024px) {
-  /* Desktop Erweiterungen */
+@media (min-width: 1024px) 
+{
+   /* Desktop Erweiterungen */
 
-  a:hover {
-    text-decoration-thickness: 6px;
-  }
+    a:hover {
+        text-decoration-thickness: 6px; 
+    }
 
   .fixed-header {
     height: 128px;
@@ -378,20 +402,20 @@ footer img {
 
   /* start page - section: main recipe */
 
-  .main-recipe-section {
-    flex-direction: row;
-    text-align: left;
+    .main-recipe-section {
+        flex-direction: row;
+        text-align: left;
+        
+        margin-top: 192px;
+        margin-bottom: 64px;
 
-    margin-top: 192px;
-    margin-bottom: 64px;
-
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-
-  .main-recipe-section img {
-    width: 450px;
-  }
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    
+    .main-recipe-section img {
+        width: 450px;
+    }
 
   .main-recipe-text {
     margin-left: 32px;
@@ -441,90 +465,82 @@ footer img {
 /*contact-form*/
 
 .body-contact-form {
-  margin: 0;
-  background-color: white;
-  font-family: "Raleway", sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+            margin: 0;
+            background-color: white;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-.contact-form-h2 {
-  text-align: center;
-}
 
-.contact-form-infomation {
-  text-align: center;
-}
+        .contact-form-h2 {
+            text-align: center;
+        }
 
-.contact-form-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
+        .contact-form-infomation {
+            text-align: center;
+        }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+        .contact-form-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
 
-.contact-form-style {
-  padding: 20px;
-  background-color: #efefef;
-  max-width: 800px;
-  margin: 192px 20px 80px;
-  padding: 40px 20px;
-}
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-.contact-form-input-style {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  gap: 5px;
-}
+        .contact-form-style {
+            padding: 20px;
+            background-color: #EFEFEF;
+            max-width: 800px;
+            margin: auto 20px;
+            padding: 40px 20px;
 
-.contact-form-input {
-  border: none;
-  background: none;
-  font-size: 16px;
-  font-family: "Raleway";
-}
+        }
 
-.contact-form-label {
-  font-size: 12px;
-  font-weight: bold;
-}
+        .contact-form-input-style {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            gap: 5px;
+        }
 
-.contact-form-textarea {
-  height: 400px;
-  resize: none;
-}
+        .contact-form-input {
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-family: 'Raleway';
+        }
 
-.contact-form-input:focus {
-  outline: none;
-}
+        .contact-form-label {
+            font-size: 12px;
+            font-weight: bold;
+        }
 
-.input-required {
-  text-align: center;
-}
+        .contact-form-textarea {
+            height: 400px;
+            resize: none;
+        }
 
-/*imprint-section*/
 
-.imprint {
-  padding: 0 120px;
-  margin-top: 192px;
-  margin-bottom: 80px;
-}
+        .contact-form-input:focus {
+            outline: none;
+        }
 
-@media screen and (max-width: 700px) {
-  .imprint {
-    padding: 0 60px;
-    margin-top: 192px;
-  }
-}
 
-/*receipt-page*/
+
+        .input-required {
+            text-align: center;
+        }
+
+
+        
+        /*receipt-page*/
