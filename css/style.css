@@ -243,7 +243,6 @@ ul {
 }
 
 /* recipe of the day section */
-
 .recipe-of-the-day-section {
     display: flex;
     align-items: center;
@@ -254,7 +253,6 @@ ul {
 }
 
 /* recipe overview section */
-
 .recipe-overview-section {
     display: flex;
     flex-direction: column;
@@ -282,7 +280,6 @@ ul {
 
 
 /* information section */
-
 .information-section {
     display: flex;
     flex-direction: column;
@@ -307,6 +304,10 @@ ul {
     gap: 16px;
 }
 
+.information-item-right h3 {
+    text-align: end;
+}
+
 .information-item-left {
     display: flex;
     flex-direction: column;
@@ -316,8 +317,11 @@ ul {
     gap: 16px;
 }
 
-/* single recipe page */
+.information-item-left h3 {
+    text-align: start;
+}
 
+/* single recipe page */
 .main-recipe-container {
     padding: 16px;
 
@@ -329,25 +333,99 @@ ul {
     gap: 16px;
 }
 
+.recipe-info {
+    display: flex;
+
+    gap: 4px;
+}
+
 .recipe-info span {
+    display: flex;
     background: #efefef;
-    padding: 6px 12px;
+    padding: 4px 8px;
     border-radius: 20px;
-    margin-right: 10px;
     font-size: 14px;
+    gap: 8px;
+}
+
+.servings-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: flex-start;
+}
+
+.servings-box div {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.servings-box input {
+    width: 50px;
+    padding: 8px;
+    margin-left:8px;
+    border: 1px solid #EFEFEF;
+    border-radius: 5%;
+}
+
+.spices-container {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: end;
+
+    align-self: flex-end;
+
+    gap: 8px;
+}
+
+.optionals-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+
+    align-self: flex-start;
+
+    gap: 8px;
+}
+
+.preperation-container {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: end;
+
+    gap: 8px;
 }
 
 .prep-info span {
     background: #efefef;
-    padding: 6px 12px;
+    padding: 4px 8px;
     border-radius: 20px;
-    margin-right: 10px;
     font-size: 14px;
+}
+
+.tipps-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+
+    gap: 8px;
+}
+
+.tipps-container ul {
+    list-style-type: square;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
 }
 
 
 /* contact page */
-
 .contact-form-main {
     display: flex;
     justify-content: center;
@@ -371,15 +449,11 @@ ul {
     text-align: center;
 }
 
-
-
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
-
 
 .contact-form-input-style {
     display: flex;
@@ -415,9 +489,7 @@ ul {
     text-align: center;
 }
 
-
-
-
+/* footer */
 footer {
     background-color: #423d3e;
     color: #ffffff;
@@ -460,6 +532,31 @@ footer img {
 /* tablet */
 @media (min-width: 768px) {
 
+    body {
+    padding-top: 96px;
+    }
+
+    img {
+        max-width: 256px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    /* header */
     .fixed-header {
         height: 96px;
         padding-right: 64px;
@@ -484,37 +581,75 @@ footer img {
         display: none;
     }
 
-
-
-
-
-    /* start page - section: main recipe */
-
-    .main-recipe-section {
-        margin-top: 120px;
-
-        padding-left: 64px;
+    /* hero section */
+    .hero-section {
         padding-right: 64px;
+        padding-left: 64px;
     }
 
-    /* start page - section: recipe overview */
+    /* recipe of the day section */
+    .recipe-of-the-day-section {
+        padding: 64px;
+    }
 
+    /* recipe overview section */
     .recipe-overview-section {
-        padding-left: 64px;
-        padding-right: 64px;
+        /* height: 100vh; */
+        padding: 64px;
     }
 
-    /* start page - section: information */
+    /* könnte man auch machen. hat aber ein komisches verhalten beim responsive von table zu mobile übergang */
+    /* .recipe-container {
+        flex-direction: row;
+
+        gap: 32px;
+    } */
+
+    /* information section */
 
     .information-section {
         padding-left: 64px;
         padding-right: 64px;
     }
 
+    .information-item-right {
+        flex-direction: row-reverse;
+    }
+
+    .item-text-right{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        gap: 8px;
+    }
 
 
+    .information-item-left {
+        flex-direction: row;
+    }
 
+    .item-text-left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
 
+        gap: 8px;
+    }
+
+    /* single recipe page */
+
+    .main-recipe-container {
+        padding: 16px 64px;
+    }
+
+    /* contact page */
+
+    .contact-form-style {
+        margin: 16px 64px;
+    }
+
+    /* footer */
     footer {
         height: 96px;
         padding-left: 64px;
@@ -539,80 +674,90 @@ footer img {
 
 }
 
-
 /* desktop */
 @media (min-width: 1024px) {
-    /* Desktop Erweiterungen */
-
-    a:hover {
-        text-decoration-thickness: 6px;
+    
+    body {
+    padding-top: 128px;
     }
 
+    img {
+        max-width: 320px;
+    }
+
+    h1 {
+        font-size: 96px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    h4{
+        font-size: 32px;
+    }
+
+    /* header */
     .fixed-header {
         padding-left: 120px;
         padding-right: 120px;
         height: 128px;
+        padding-right: 128px;
+        padding-left: 128px;
     }
 
     .fixed-header img {
         height: 96px;
     }
 
-    .header-nav-links {
-        gap: 48px;
+    /* hero section */
+    .hero-section {
+        padding-right: 128px;
+        padding-left: 128px;
     }
 
-
-    /* start page - section: main recipe */
-
-    .main-recipe-section {
-        flex-direction: row;
-        text-align: left;
-
-        margin-top: 192px;
-        margin-bottom: 64px;
+    /* recipe of the day section */
+    .recipe-of-the-day-section {
+        padding: 64px 128px;
     }
 
-    .main-recipe-section img {
-        width: 450px;
-    }
-
-    .main-recipe-text {
-        margin-left: 32px;
-    }
-
-    /* start page - section: recipe overview */
-
+    /* recipe overview section */
     .recipe-overview-section {
-        padding-top: 44px;
-        padding-bottom: 64px;
+        padding: 64px;
     }
 
-    .single-recipes {
+    .recipe-container {
         flex-direction: row;
     }
 
-    /* start page - section: information */
+    /* information section */
 
     .information-section {
-        margin-top: 44px;
-        margin-bottom: 64px;
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
-    .information-text {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        padding-top: 16px;
-        gap: 32px;
+    /* single recipe page */
+
+    .main-recipe-container {
+        padding: 16px 128px;
     }
 
+    /* contact page */
 
+    .contact-form-style {
+        margin: 16px 128px;
+    }
 
-
-
+    /* footer */
     footer {
         height: 128px;
+        padding-left: 128px;
+        padding-right: 128px;
     }
 
     footer img {
