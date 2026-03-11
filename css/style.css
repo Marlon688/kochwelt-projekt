@@ -583,7 +583,7 @@ hr {
     border: 0;
     border-top: 1px solid #E5E5E5;
     width: 100%;
-    margin: 30px 0;
+    margin: 60px 0 10px;
     display: block;
 
 }
@@ -597,40 +597,43 @@ hr {
 }
 
 .portion-button {
-    background-color: #008000;
-    color: #ffffff;
-    font-size: 16px;
+     background-color: #1f8f2f;
+    color: white;
     border: none;
-    padding: 10px 50px;
-    margin-top: 30px;
-    width: 150px;
+    padding: 10px 40px;
+    font-size: 14px;
+    margin: 0;
 
+}
 
+.portion-button:hover {
+    background-color: #2aa63c;
 }
 
 .portion-box {
-    margin: 20px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0
 }
 
-.portion-box input {
-    width: 130px;
-    padding: 9px;
-    border-radius: 4px 0 0 4px;
-   margin: 10px -10px 10px 15px;
-}
-
-.portion-box button {
-    background: #1f8f2f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+.portion-controls {
+    display: flex;
     
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.2s;
-   
 
 }
+.portion-controls input {
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px 0 0 4px;
+}
+
+
+
+
+
 
 .ingredients {
     list-style: none;
