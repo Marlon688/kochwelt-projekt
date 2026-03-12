@@ -35,21 +35,6 @@ ingredients.forEach((ingredient) => {
 
 }
 
-
-
-let exp = "3" + 5;
-
-console.log(exp);
-
-
-
-
-
-
-
-
-
-
 const recipe = 
 {       
     title: "Szegediner Gulasch",
