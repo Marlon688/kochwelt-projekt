@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 
     <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -17,14 +18,17 @@
 
     <header class="fixed-header">
 
-        <a href="../index.html"><img src="../assets/images/logo.png" alt="header logo"></a>
+        <div class="image-link">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="header logo"></a>
+        </div>
+        
 
         <nav id="header-nav-links" class="header-nav-links">
             <a href="../index.html">Start</a>
-            <a href="../index.html">Rezept des Tages</a>
+            <a href="./menemen.html">Rezept des Tages</a>
+            <a href="./contact.html">Kontakt</a>
+            <a href="./impressum.html">Impressum</a>
             <!-- <a href="../index.html">Tipps und Tricks</a> -->
-            <a href="../contact.html">Kontakt</a>
-            <a href="../impressum.html">Impressum</a>
         </nav>
 
         <div id="ham-menu" class="ham-menu">
@@ -37,21 +41,21 @@
 
     <main class="main-recipe-container">
 
-        <h2>Szegediner Gulasch</h2>
-        <p>auch als Gulasch Szegediner Art, ungarischer Krautgulasch oder Gulasch mit Sauerkraut bekannt.</p>
+        <h2 class="main-recipe-container-headline">Szegediner Gulasch</h2>
+        <!-- <p>auch als Gulasch Szegediner Art, ungarischer Krautgulasch oder Gulasch mit Sauerkraut bekannt.</p> -->
 
         <img src="../assets/images/szegediner-gulasch.jpg">
 
         <div class="recipe-info">
             <span><i class="fa-regular fa-clock"></i>10min</span>
             <span><i class="fa-solid fa-signal"></i>normal</span>
-            <span><i class="fa-regular fa-calendar-days"></i> 06.03.2026</span>
+            <span><i class="fa-regular fa-calendar-days"></i>06.03.2026</span>
         </div>
 
         <hr>
 
         <div class="servings-box">
-            <h3>Zutaten für wieviel</h3>
+            <h4>Zutaten für wieviel</h4>
     
             <form id="servings-form">
                 <label for="servings-input">Personen</label>
@@ -125,7 +129,7 @@
             </ul>
         </div>
 
-        <div class="optionals-container">
+        <!-- <div class="optionals-container">
             <h4>Optional, wenn man mag</h4>
             <ul>
                 <li>Kümmel</li>
@@ -136,7 +140,7 @@
             </ul>
         </div>
 
-        <hr>
+        <hr> -->
 
         <div class="preperation-container">
             <h3>Zubereitung</h3>
@@ -164,7 +168,7 @@
             </ol>
         </div>
 
-        <hr>
+        <!-- <hr>
 
         <div class="tipps-container">
             <h3>Tipps</h3>
@@ -177,8 +181,9 @@
                 </li>
                 <li>Einmal leicht anbrennen lassen und einen Tag vorher zubereiten verbessern den Geschmack.</li>
             </ul>
-        </div>
+        </div> -->
 
+        <h4>Rezept erstellt von</h4>
         <div class="author">
             <img src="../assets/images/profile.png" alt="Autor">
             <span>Angelo</span>
@@ -193,13 +198,13 @@
 
         <div class="footer-content">
             <p>© Kochwelt - Alle Rechte vorbehalten</p>
-            <a href="../impressum.html">Impressum</a>
-            <a href="#">Datenschutz</a>
+            <a href="./impressum.html">Impressum</a>
+            <a href="./privacy.html">Datenschutz</a>
         </div>
     </footer>
 
 
-    <script src="../js/script.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/recipe-calculator.js"></script>
 
 </body>

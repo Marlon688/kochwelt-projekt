@@ -1,4 +1,6 @@
+
 let basePortions = 4;
+
 function calculatePortions() {
 
 let portions = document.getElementById("portionInput").value;
@@ -35,6 +37,16 @@ ingredients.forEach((ingredient) => {
 
 
 
+let exp = "3" + 5;
+
+console.log(exp);
+
+
+
+
+
+
+
 
 
 
@@ -59,6 +71,7 @@ const recipe =
 
 }      
 
+
 const servingsForm = document.getElementById("servings-form");
 
 const amountList = document.getElementsByClassName("amount");
@@ -71,11 +84,7 @@ servingsForm.addEventListener("submit", calculateServings);
 function calculateServings(event)
 {   
     event.preventDefault();
-
     let newServings = document.getElementById("servings-input").value;
-
-    // checkServings(newServings);
-
     let factor = newServings / recipe.servings;
 
     for (let i = 0; i < amountList.length; i++) 
@@ -87,16 +96,6 @@ function calculateServings(event)
     }
 }
 
-
-// function checkServings(newServings)
-// {
-//     if (newServings < 1) 
-//     {
-//         newServings = 1;
-//         alert("Bitte mindestens 1 Portion eingeben");
-//         return;
-//     }
-// }
 
 
 

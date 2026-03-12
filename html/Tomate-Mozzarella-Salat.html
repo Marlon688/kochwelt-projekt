@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomate Mozarella Salat</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
     <link rel="stylesheet" href="../css/style.css">
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 
-<body class="recipe-page">
+<body>
 
-     <header class="fixed-header">
+    <header class="fixed-header">
 
-        <a href="/index.html"><img class="logo-recipe-site" src="../assets/images/logo.png" alt="kochwelt-logo"></a>
+        <div class="image-link">
+            <a href="/index.html"><img class="logo-recipe-site" src="../assets/images/logo.png" alt="kochwelt-logo"></a>
+        </div>
+        
 
         <nav id="header-nav-links" class="header-nav-links">
-            <a href="index.html">Start</a>
-            <a href="html/meinRezept.html">Rezept des Tages</a>
-            <a href="html/Kontaktformular.html">Kontakt</a>
-            <a href="#">Impressum</a>
+            <a href="../index.html">Start</a>
+            <a href="./menemen.html">Rezept des Tages</a>
+            <a href="./contact.html">Kontakt</a>
+            <a href="./impressum.html">Impressum</a>
         </nav>
 
         <div id="ham-menu" class="ham-menu">
@@ -36,11 +38,11 @@
 
     </header>
 
-    <main class="recipe-main">
+    <main class="main-recipe-container">
 
-        <h1 class="h1-recipe-name">Tomate Mozzarella Salat</h1>
+        <h2 class="main-recipe-container-headline">Tomate Mozzarella Salat</h2>
 
-        <img src="../assets/images/tomate-mozzarella-salat.png" class="recipe-img">
+        <img src="../assets/images/tomate-mozzarella-salat.png">
 
 
         <div class="recipe-info">
@@ -49,17 +51,16 @@
             <span><i class="fa-regular fa-calendar-days"></i> 06.03.2026</span>
         </div>
 
-
-
         <hr>
 
+        <div class="servings-box">
+            <h4>Zutaten für wieviel</h4>
 
-        <div class="portion-box">
-            <label>Zutaten für</label>
-            <input id="portionInput" type="number" value="4" min="1" >
-            <button class="portion-button" onclick="calculatePortions()">Portionen</button>
+            <form id="servings-form">
+                <label for="servings-input">Personen</label>
+                <input id="portionInput" type="number" value="4" min="1" max="100" required>
+            <button onclick="calculatePortions()">Portionen</button>
         </div>
-
 
         <ul class="ingredients">
 
@@ -74,29 +75,27 @@
 
         </ul>
 
+        <div class="preperation-container">
+            <h2>Zubereitung</h2>
 
-        <h2>Zubereitung</h2>
+            <div class="prep-info">
+                <span><i class="fa-regular fa-clock"></i> ca. 10 Minuten</span>
+                <span><i class="fa-regular fa-clock"></i> Gesamtzeit ca. 20 Minuten</span>
+            </div>
 
-        <div class="prep-info">
-            <span><i class="fa-regular fa-clock"></i> ca. 10 Minuten</span>
-            <span><i class="fa-regular fa-clock"></i> Gesamtzeit ca. 20 Minuten</span>
+            <p>
+                Tomaten waschen und in Scheiben schneiden. Mozzarella ebenfalls in Scheiben schneiden.
+                Tomaten und Mozzarella abwechselnd auf einem Teller anrichten. Mit Olivenöl beträufeln
+                und mit Salz und Pfeffer würzen. Frischen Basilikum und Balsamico darüber geben und servieren.
+            </p>
         </div>
 
-
-        <p>
-            Tomaten waschen und in Scheiben schneiden. Mozzarella ebenfalls in Scheiben schneiden.
-            Tomaten und Mozzarella abwechselnd auf einem Teller anrichten. Mit Olivenöl beträufeln
-            und mit Salz und Pfeffer würzen. Frischen Basilikum und Balsamico darüber geben und servieren.
-        </p>
-
-
-        <h3>Rezept erstellt von</h3>
-
+        <h4>Rezept erstellt von</h4>
         <div class="author">
             <img src="../assets/images/Marlon.jpg" alt="Autor">
             <span>Marlon</span>
         </div>
-
+        
        
     </main>
 
@@ -107,13 +106,13 @@
 
         <div class="footer-content">
             <p>© Kochwelt - Alle Rechte vorbehalten</p>
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutz</a>
+            <a href="./impressum.html">Impressum</a>
+            <a href="./privacy.html">Datenschutz</a>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="../js/portionsrechner.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/recipe-calculator.js"></script>
 
 
 
