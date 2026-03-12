@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartoffelsalat</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-header">
+
+        <div class="image-link">
+            <a href="../index.html"><img class="logo-recipe-site" src="../assets/images/logo.png" alt="kochwelt-logo"></a>
+        </div>
+        
+
+        <nav id="header-nav-links" class="header-nav-links">
+            <a href="../index.html">Start</a>
+            <a href="./menemen.html">Rezept des Tages</a>
+            <a href="./contact.html">Kontakt</a>
+            <a href="./impressum.html">Impressum</a>
+        </nav>
+
+        <div id="ham-menu" class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <main class="main-recipe-container">
+
+        <h2 class="main-recipe-container-headline">Kartoffelsalat</h2>
+
+        <img src="../assets/images/potato-salad.jpg">
+
+
+        <div class="recipe-info">
+            <span><i class="fa-regular fa-clock"></i> 30 Minuten</span>
+            <span><i class="fa-solid fa-signal"></i> normal</span>
+            <span><i class="fa-regular fa-calendar-days"></i> 08.03.2026</span>
+        </div>
+
+        <hr>
+
+        <div class="servings-box">
+            <h4>Zutaten für wieviel</h4>
+
+            <form id="servings-form">
+                <label for="servings-input">Personen</label>
+                <input id="portionInput" type="number" value="4" min="1" max="100" required>
+            <button onclick="calculatePortions()">Portionen</button>
+        </div>
+
+        <ul class="ingredients">
+
+            <li data-amount= "50">50 ml milder Essig</li>
+            <li data-amount= "70">70 ml hochwertiges Speiseöl</li>
+            <li data-amount= "2" data-unit="EL">2 EL Schnittlauchröllchen</li>
+            <li data-amount= "500">500 g gekochte Pellkartoffeln</li>
+            <li data-amount= "120">120 ml Brühe</li>
+            <li>Salz</li>
+            <li>Pfeffer</li>
+            
+        </ul>
+
+        <div class="preperation-container">
+            <h2>Zubereitung</h2>
+
+            <div class="prep-info">
+                <span><i class="fa-regular fa-clock"></i> ca. 20 Minuten</span>
+                <span><i class="fa-regular fa-clock"></i> Gesamtzeit ca. 30 Minuten</span>
+            </div>
+
+            <p>
+                Als erstes Essig und Öl in einer größeren Schüssel vermischen. Dabei sollte darauf geachtet werden, dass der Ölanteil etwas höher als der Essiganteil ist. 
+                Danach heiße Brühe in die Schüssel geben und alles mit einem Schneebesen vermischen. Anschließend die gehackten Schnittlauchröllchen dazu geben. 
+                Zum Abschluss mit Salz und Pfeffer nach Belieben würzen und nochmal alles verrühren. Damit ist das Dressing für den Kartoffelsalat fertig.
+                <br>
+                <br>
+                Als nächstes die Kartoffeln kochen und anschließend pellen, solange sie noch heiß sind. Die geschälten Kartoffeln danach zerdrücken und in die Schüssel mit dem Dressing dazu geben. 
+                Als letzten Schritt alle Zutaten in der Schüssel nochmal miteinander vermengen und das Gericht ist fertig.
+            </p>
+        </div>
+
+        <h4>Rezept erstellt von</h4>
+        <div class="author">
+            <img src="../assets/images/profile.png" alt="Autor">
+            <span>Timo</span>
+        </div>
+        
+       
+    </main>
+
+    <footer>
+
+        <a class="hide-on-desktop" href="../index.html"><img src="../assets/images/logo_small.png" alt="kochwelt-logo"></a>
+        <a class="hide-on-mobile" href="../index.html"><img src="../assets/images/logo.png" alt="kochwelt-logo"></a>
+
+        <div class="footer-content">
+            <p>© Kochwelt - Alle Rechte vorbehalten</p>
+            <a href="./impressum.html">Impressum</a>
+            <a href="./privacy.html">Datenschutz</a>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/recipe-calculator.js"></script>
+
+</body>
+
+</html>
