@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Bold.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Bold.woff') format('woff');
+    src: url('../assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Regular.woff') format('woff');
+    src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/assets/fonts/Raleway-Light.woff2') format('woff2'),
-        url('/assets/fonts/Raleway-Light.woff') format('woff');
+    src: url('../assets/fonts/Raleway-Light.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -29,21 +29,22 @@
 
 html {
     scroll-behavior: smooth;
-    scrollbar-color: #007e1e #f1f1f1;
+    scrollbar-color: #007f1e #f1f1f1;
     /* (Daumen-Farbe) (Spur-Farbe) */
 }
 
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 64px;
 
+    text-align: center;
     font-family: 'Raleway';
     font-size: 16px;
     color: black;
 }
 
 a {
-    color: #000;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -136,6 +137,7 @@ table tr:nth-child(odd) {
 
 ul {
     list-style-type: none;
+    width: 100%;
     margin: 0;
     padding: 0;
     text-align: start;
@@ -185,6 +187,7 @@ ol {
 
 /* mobile */
 
+/* header */
 .fixed-header {
     position: fixed;
     top: 0;
@@ -239,7 +242,6 @@ ol {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
     padding-top: 16px;
     padding-bottom: 16px;
@@ -296,7 +298,7 @@ ol {
     transform: rotate(-45deg);
 }
 
-/* start page - section: main recipe */
+
 
 /* hero section */
 /* .hero-section {
@@ -368,6 +370,7 @@ ol {
 
     gap: 64px;
 }
+
 .information-container {
     display: flex;
     flex-direction: column;
@@ -421,9 +424,6 @@ ol {
 
     gap: 16px;
 }
-.information-container {
-    display: flex;
-    flex-direction: column;
 
 .main-recipe-container img {
 
@@ -472,6 +472,7 @@ ol {
     border: 1px solid #EFEFEF;
     border-radius: 5%;
 }
+
 
 .ingredients li {
     list-style: none;
@@ -533,7 +534,34 @@ ol {
     font-size: 14px;
 }
 
-.information-text img {
+.tipps-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+
+    gap: 8px;
+}
+
+.tipps-container ul {
+    list-style-type: square;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+}
+
+.author img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -719,6 +747,11 @@ footer img {
         display: none;
     }
 
+    /* hero section */
+    .hero-section {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
 
     /* recipe of the day section */
     .recipe-of-the-day-section {
@@ -765,9 +798,9 @@ footer img {
         box-shadow: none;
     }
 
-    .main-recipe-section {
-        margin-top: 120px;
+    /* information section */
 
+    .information-section {
         padding-left: 64px;
         padding-right: 64px;
     }
@@ -788,7 +821,15 @@ footer img {
         flex-direction: row;
     }
 
-    /* start page - section: information */
+    .item-text-left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        gap: 8px;
+    }
+
+    /* single recipe page */
 
     .main-recipe-container {
         padding: 16px 64px;
@@ -808,10 +849,7 @@ footer img {
         margin: 16px 64px;
     }
 
-
-
-
-
+    /* footer */
     footer {
         height: 96px;
         padding-left: 64px;
@@ -836,7 +874,6 @@ footer img {
 
 }
 
-
 /* desktop */
 @media (min-width: 1024px) {
 
@@ -844,20 +881,21 @@ footer img {
         padding-top: 128px;
     }
 
-    .fixed-header {
-        height: 128px;
+    img {
+        max-width: 320px;
     }
 
-    .fixed-header img {
-        height: 96px;
+    h1 {
+        font-size: 96px;
     }
 
-    .header-nav-links {
-        gap: 48px;
+    h2 {
+        font-size: 64px;
     }
 
-
-    /* start page - section: main recipe */
+    h3 {
+        font-size: 48px;
+    }
 
     h4 {
         font-size: 32px;
@@ -878,9 +916,14 @@ footer img {
         padding-left: 128px;
     }
 
+    .header-content-border-box {
+        max-width: 1440px;
+    }
+
     .fixed-header img {
         height: 96px;
     }
+
     /* hero section */
     .hero-section {
         padding-right: 128px;
