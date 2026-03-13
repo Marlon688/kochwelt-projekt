@@ -543,6 +543,8 @@ footer img {
 
 
 
+
+
 /*recipe-page*/
 
 .recipe-page {
@@ -558,8 +560,8 @@ footer img {
 .recipe-main {
     background-color: white;
     padding: 180px 120px 100px 120px;
-    max-width: 1440px;
-    margin: 0 auto;
+
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -583,7 +585,7 @@ hr {
     border: 0;
     border-top: 1px solid #E5E5E5;
     width: 100%;
-    margin: 60px 0 10px;
+    margin: 50px 0 10px;
     display: block;
 
 }
@@ -597,12 +599,14 @@ hr {
 }
 
 .portion-button {
-     background-color: #1f8f2f;
+    background-color: #1f8f2f;
     color: white;
     border: none;
-    padding: 10px 40px;
+    padding: 10px 20px;
     font-size: 14px;
     margin: 0;
+    font-size: clamp(12px, 2vw, 16px);
+    width: auto;
 
 }
 
@@ -620,19 +624,17 @@ hr {
 
 .portion-controls {
     display: flex;
-    
+    flex-wrap: nowrap;
+
 
 }
+
 .portion-controls input {
     width: 120px;
     padding: 10px;
     border: 1px solid #EFEFEF;
     border-radius: 4px 0 0 4px;
 }
-
-
-
-
 
 
 .ingredients {
@@ -681,20 +683,19 @@ hr {
 }
 
 
-/* responive Mobile ab 150px*/
-@media (min-width:150px) and (max-width:358px) {
+
+/* Mobile klein*/
+@media (min-width:150px) {
 
 
 
     .h1-recipe-name {
         font-size: 20px;
-        padding: 60px 20px 0 0;
-        margin-top: 30px;
 
     }
 
     .recipe-main {
-        padding: 0 10px 50px 10px;
+        padding: 80px 10px 50px 10px;
     }
 
 
@@ -702,6 +703,21 @@ hr {
         display: flex;
         flex-direction: column;
         gap: 10px
+    }
+
+    .hr {
+        margin: 10px 0 10px;
+    }
+
+    .portion-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portion-controls input {
+        width: 20px;
+        padding: 10px;
+
     }
 
     .ingredients {
@@ -720,47 +736,153 @@ hr {
         display: flex;
         flex-direction: column;
 
+
     }
 }
 
-/* responive Mobile*/
-@media (min-width:358px) and (max-width:767px) {
+/* Mobile groß*/
+@media (min-width:358px) {
+
+    .recipe-page .fixed-header img {
+        height: 50px;
+    }
 
     .h1-recipe-name {
         font-size: 24px;
-        padding: 60px 20px 0 0;
-        margin-top: 30px;
+
     }
 
 
     .recipe-main {
-        padding: 20px 20px 50px 20px;
+        padding: 100px 20px 50px 20px;
 
     }
 
     .recipe-info {
         display: flex;
         flex-direction: column;
-        gap: 10px
-    }
-
-    .portion-box button {
-
-        margin-top: 20px;
-    }
-
-    .prep-info {
-        display: flex;
-        flex-direction: column;
         gap: 10px;
+    }
+
+    .portion-box {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .portion-controls input {
+        width: 60px;
+        padding: 10px;
 
     }
 
 }
 
-/* responive Tablet*/
-@media (min-width:768px) and (max-width:1280px) {
-    .recipe-main {
-        padding: 140px 100px 100px 100px;
+.prep-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Tablet klein*/
+@media (min-width:768px) and (max-width:883px) {
+
+    .header-nav-links {
+        font-size: 14px;
+        gap: 16px;
     }
+
+    .recipe-info,
+    .prep-info {
+        flex-direction: row;
+    }
+
+
+    .author {
+        flex-direction: row;
+
+    }
+}
+
+/* Tablet klein*/
+@media (min-width:768px) {
+
+    .recipe-main {
+        padding: 130px 80px 80px 100px;
+    }
+
+    .recipe-page .fixed-header {
+        height: 96px;
+        padding-left: 100px;
+        padding-right: 80px;
+
+    }
+
+
+    .recipe-page .fixed-header img {
+        height: 70px;
+    }
+
+    .recipe-info,
+    .prep-info {
+        flex-direction: row;
+
+    }
+
+    .portion-controls input {
+        width: 120px;
+        padding: 10px;
+
+    }
+
+
+    .portion-button {
+
+        padding: 10px 30px;
+
+    }
+
+    .author {
+        flex-direction: row;
+    }
+
+
+}
+
+
+/* Desktop*/
+@media (min-width:1280px) {
+    .recipe-main {
+        padding: 130px 100px 100px 100px;
+    }
+
+    .recipe-info,
+    .prep-info {
+        flex-direction: row;
+
+    }
+
+    .recipe-page .fixed-header {
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+
+    .recipe-page .fixed-header img {
+
+        margin-top: 25px;
+    }
+
+    .author {
+        flex-direction: row;
+
+    }
+
 }
