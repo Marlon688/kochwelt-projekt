@@ -421,6 +421,9 @@ ol {
 
     gap: 16px;
 }
+.information-container {
+    display: flex;
+    flex-direction: column;
 
 .main-recipe-container img {
 
