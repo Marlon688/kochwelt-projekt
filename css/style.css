@@ -94,7 +94,7 @@ h3 {
     margin-block-end: 0;
 }
 
-h4{
+h4 {
     font-size: 16px;
     text-align: center;
     margin-block-start: 0;
@@ -124,11 +124,11 @@ td {
 }
 
 .amount {
-    width:50px;
+    width: 50px;
 }
 
 .unit {
-    width:50px;
+    width: 50px;
 }
 
 table tr:nth-child(odd) {
@@ -139,6 +139,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: start;
 }
 
 ol {
@@ -150,8 +151,13 @@ ol {
     display: flex;
     flex-direction: column;
 
+    margin: 0 auto;
+    max-width: 1440px;
+
     align-items: start;
     text-align: start;
+
+    gap: 8px;
 }
 
 .privacy-main {
@@ -159,8 +165,13 @@ ol {
     display: flex;
     flex-direction: column;
 
+    margin: 0 auto;
+    max-width: 1440px;
+
     align-items: start;
     text-align: start;
+
+    gap: 8px;
 }
 
 /* mobile */
@@ -178,11 +189,25 @@ ol {
     padding-left: 16px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     background-color: #ffffff;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* for header and footer */
+.content-border-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+
+    margin: 0 auto;
+    max-width: 1440px;
+
+    flex: 1;
 }
 
 .fixed-header img {
@@ -278,9 +303,11 @@ ol {
 } */
 
 /* recipe of the day section */
-.recipe-of-the-day-section
-{
+.recipe-of-the-day-section {
     padding: 64px 16px;
+
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .recipe-of-the-day-text {
@@ -343,6 +370,8 @@ ol {
     align-items: end;
     text-align: end;
 
+    margin: 0 auto;
+    max-width: 1440px;
     gap: 16px;
 }
 
@@ -355,6 +384,9 @@ ol {
     flex-direction: column;
     align-items: start;
     text-align: start;
+
+    margin: 0 auto;
+    max-width: 1440px;
 
     gap: 16px;
 }
@@ -371,6 +403,9 @@ ol {
     justify-content: center;
     flex-direction: column;
     align-items: start;
+
+    margin: 0 auto;
+    max-width: 1440px;
 
     gap: 16px;
 }
@@ -389,7 +424,7 @@ ol {
 
 .recipe-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     gap: 4px;
 }
@@ -419,7 +454,7 @@ ol {
 .servings-box input {
     width: 50px;
     padding: 8px;
-    margin-left:8px;
+    margin-left: 8px;
     border: 1px solid #EFEFEF;
     border-radius: 5%;
 }
@@ -461,6 +496,12 @@ ol {
     align-items: start;
 
     gap: 8px;
+}
+
+.prep-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .prep-info span {
@@ -600,6 +641,8 @@ footer img {
     justify-content: center;
     flex-direction: column;
     align-items: end;
+
+    gap: 4px;
 }
 
 .hide-on-mobile {
@@ -610,7 +653,7 @@ footer img {
 @media (min-width: 768px) {
 
     body {
-    padding-top: 96px;
+        padding-top: 96px;
     }
 
     img {
@@ -629,16 +672,16 @@ footer img {
         font-size: 32px;
     }
 
-    h4{
+    h4 {
         font-size: 24px;
     }
 
     .impressum-main {
-        padding: 64px;
+        padding: 16px 64px;
     }
 
     .privacy-main {
-        padding: 64px;
+        padding: 16px 64px;
     }
 
     /* header */
@@ -648,16 +691,27 @@ footer img {
         padding-left: 64px;
     }
 
+    .header-content-border-box {
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .image-link {
+        display: flex;
+        align-items: center;
+    }
+
     .fixed-header img {
         height: 64px;
     }
 
     .header-nav-links {
         position: static;
-        padding-bottom: 5px;
         justify-content: end;
         flex-direction: row;
         align-self: end;
+
+        padding-bottom: 4px;
 
         gap: 36px;
     }
@@ -696,7 +750,7 @@ footer img {
 
     .recipe-container {
         flex-direction: row;
-        gap: 16px;
+        gap: 32px;
     }
 
     .recipe-item img {
@@ -724,7 +778,7 @@ footer img {
         flex-direction: row-reverse;
     }
 
-    .item-text-right{
+    .item-text-right {
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -748,6 +802,14 @@ footer img {
 
     .main-recipe-container {
         padding: 16px 64px;
+    }
+
+    .recipe-info {
+        flex-direction: row;
+    }
+
+    .prep-info {
+        flex-direction: row;
     }
 
     /* contact page */
@@ -783,9 +845,9 @@ footer img {
 
 /* desktop */
 @media (min-width: 1024px) {
-    
+
     body {
-    padding-top: 128px;
+        padding-top: 128px;
     }
 
     img {
@@ -804,16 +866,16 @@ footer img {
         font-size: 48px;
     }
 
-    h4{
+    h4 {
         font-size: 32px;
     }
 
     .impressum-main {
-        padding: 128px;
+        padding: 16px 128px;
     }
 
     .privacy-main {
-        padding: 128px;
+        padding: 16px 128px;
     }
 
     /* header */
@@ -821,6 +883,10 @@ footer img {
         height: 128px;
         padding-right: 128px;
         padding-left: 128px;
+    }
+
+    .header-content-border-box {
+        max-width: 1440px;
     }
 
     .fixed-header img {

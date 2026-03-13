@@ -18,22 +18,25 @@
 
     <header class="fixed-header">
 
-        <div class="image-link">
-            <a href="../index.html"><img class="logo-recipe-site" src="../assets/images/logo.png" alt="kochwelt-logo"></a>
-        </div>
-        
+        <div class="content-border-box">
+            <div class="image-link">
+                <a href="../index.html"><img class="logo-recipe-site" src="../assets/images/logo.png"
+                        alt="kochwelt-logo"></a>
+            </div>
 
-        <nav id="header-nav-links" class="header-nav-links">
-            <a href="../index.html">Start</a>
-            <a href="./menemen.html">Rezept des Tages</a>
-            <a href="./contact.html">Kontakt</a>
-            <a href="./impressum.html">Impressum</a>
-        </nav>
 
-        <div id="ham-menu" class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <nav id="header-nav-links" class="header-nav-links">
+                <a href="../index.html">Start</a>
+                <a href="./menemen.html">Rezept des Tages</a>
+                <a href="./contact.html">Kontakt</a>
+                <a href="./impressum.html">Impressum</a>
+            </nav>
+
+            <div id="ham-menu" class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
     </header>
@@ -59,19 +62,20 @@
             <form id="servings-form">
                 <label for="servings-input">Personen</label>
                 <input id="portionInput" type="number" value="4" min="1" max="100" required>
-            <button onclick="calculatePortions()">Portionen</button>
+                <button onclick="calculatePortions()">Portionen</button>
+            </form>
         </div>
 
         <ul class="ingredients">
 
-            <li data-amount= "4">4 Tomaten</li>
-            <li data-amount= "2">2 Mozzarella Kugeln</li>
-            <li data-amount= "3" data-unit="EL">3 EL Olivenöl</li>
+            <li data-amount="4">4 Tomaten</li>
+            <li data-amount="2">2 Mozzarella Kugeln</li>
+            <li data-amount="3" data-unit="EL">3 EL Olivenöl</li>
             <li>Salz</li>
             <li>Pfeffer</li>
             <li>Frischer Basilikum</li>
             <li>Balsamico</li>
-            
+
 
         </ul>
 
@@ -95,21 +99,28 @@
             <img src="../assets/images/Marlon.jpg" alt="Autor">
             <span>Marlon</span>
         </div>
-        
-       
+
+
     </main>
 
     <footer>
 
-        <a class="hide-on-desktop" href="../index.html"><img src="../assets/images/logo_small.png" alt="kochwelt-logo"></a>
-        <a class="hide-on-mobile" href="../index.html"><img src="../assets/images/logo.png" alt="kochwelt-logo"></a>
+        <div class="content-border-box">
+            <a class="hide-on-desktop" href="../index.html"><img src="../assets/images/logo_small.png"
+                    alt="kochwelt-logo"></a>
+            <a class="hide-on-mobile" href="../index.html"><img src="../assets/images/logo.png" alt="kochwelt-logo"></a>
 
-        <div class="footer-content">
-            <p>© Kochwelt - Alle Rechte vorbehalten</p>
-            <a href="./impressum.html">Impressum</a>
-            <a href="./privacy.html">Datenschutz</a>
-        </div>
+            <div class="footer-content">
+                <p>© Kochwelt - Alle Rechte vorbehalten</p>
+                <a href="./impressum.html">Impressum</a>
+                <a href="./privacy.html">Datenschutz</a>
+            </div>
+
+        </div>   
     </footer>
+
+   
+
 
     <script src="../js/main.js"></script>
     <script src="../js/recipe-calculator.js"></script>
