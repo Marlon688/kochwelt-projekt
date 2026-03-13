@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Rezept</title>
+    <title>Szegediner Gulasch</title>
 
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 
     <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -17,42 +18,47 @@
 
     <header class="fixed-header">
 
-        <a href="../index.html"><img src="../assets/images/logo.png" alt="header logo"></a>
+        <div class="content-border-box">
+            <div class="image-link">
+                <a href="../index.html"><img src="../assets/images/logo.png" alt="header logo"></a>
+            </div>
 
-        <nav id="header-nav-links" class="header-nav-links">
-            <a href="../index.html">Start</a>
-            <a href="../index.html">Rezept des Tages</a>
-            <!-- <a href="../index.html">Tipps und Tricks</a> -->
-            <a href="../contact.html">Kontakt</a>
-            <a href="../impressum.html">Impressum</a>
-        </nav>
 
-        <div id="ham-menu" class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <nav id="header-nav-links" class="header-nav-links">
+                <a href="../index.html">Start</a>
+                <a href="./menemen.html">Rezept des Tages</a>
+                <a href="./contact.html">Kontakt</a>
+                <a href="./impressum.html">Impressum</a>
+                <!-- <a href="../index.html">Tipps und Tricks</a> -->
+            </nav>
+
+            <div id="ham-menu" class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
     </header>
 
     <main class="main-recipe-container">
 
-        <h2>Szegediner Gulasch</h2>
-        <p>auch als Gulasch Szegediner Art, ungarischer Krautgulasch oder Gulasch mit Sauerkraut bekannt.</p>
+        <h2 class="main-recipe-container-headline">Szegediner Gulasch</h2>
+        <!-- <p>auch als Gulasch Szegediner Art, ungarischer Krautgulasch oder Gulasch mit Sauerkraut bekannt.</p> -->
 
         <img src="../assets/images/szegediner-gulasch.jpg">
 
         <div class="recipe-info">
             <span><i class="fa-regular fa-clock"></i>10min</span>
             <span><i class="fa-solid fa-signal"></i>normal</span>
-            <span><i class="fa-regular fa-calendar-days"></i> 06.03.2026</span>
+            <span><i class="fa-regular fa-calendar-days"></i>06.03.2026</span>
         </div>
 
         <hr>
 
         <div class="servings-box">
-            <h3>Zutaten für wieviel</h3>
-    
+            <h4>Zutaten für wieviel</h4>
+
             <form id="servings-form">
                 <label for="servings-input">Personen</label>
                 <input id="servings-input" type="number" value="4" min="1" max="100" required>
@@ -111,7 +117,7 @@
                     <td class="amount">50</td>
                     <td class="unit">g</td>
                     <td class="name">Mehl</td>
-                </tr> 
+                </tr>
             </tbody>
         </table>
 
@@ -125,7 +131,7 @@
             </ul>
         </div>
 
-        <div class="optionals-container">
+        <!-- <div class="optionals-container">
             <h4>Optional, wenn man mag</h4>
             <ul>
                 <li>Kümmel</li>
@@ -136,7 +142,7 @@
             </ul>
         </div>
 
-        <hr>
+        <hr> -->
 
         <div class="preperation-container">
             <h3>Zubereitung</h3>
@@ -145,18 +151,21 @@
                 <span><i class="fa-regular fa-clock"></i> Gesamtzeit ca. 1h 30min</span>
             </div>
             <ol>
-                <li>Den Gulasch in Mundgerechte Stücke schneiden und im heißen Öl scharf anbraten. Zwiebeln grob würfeln und
+                <li>Den Gulasch in mundgerechte Stücke schneiden und im heißen Öl scharf anbraten. Zwiebeln grob würfeln
+                    und
                     Knoblauch grob hacken und zum Fleisch geben.<br>
                     Alles gut würzen mit Salz, Pfeffer, reichlich geräucherten und edelsüßen Paprika und 1 - 2
                     Lorbeerblättern.<br>
                     Hier optional noch mit Kümmel, Majoran oder Thymian abrunden.
                 </li>
                 <li>Tomatenmark, Butter und Mehl dazugeben und kurz mit rösten.<br>
-                    Mit einem guten Schluck Weißwein ablöschen und Bratansatz vom Topfboden lösen, anschließend mit Brühe
+                    Mit einem guten Schluck Weißwein ablöschen und Bratansatz vom Topfboden lösen, anschließend mit
+                    Brühe
                     auffüllen.<br>
                     Alternativ kann Weißwein und Brühe auch durch Wasser ersetzt werden.
                 </li>
-                <li>Ca. 30 Minuten bei niedriger Hitze köcheln lassen. Anschließend das Sauerkraut dazugeben und für ca. weitere
+                <li>Ca. 30 Minuten bei niedriger Hitze köcheln lassen. Anschließend das Sauerkraut dazugeben und für ca.
+                    weitere
                     30 Minuten köcheln lassen.<br>
                     Vor dem Servieren nochmal abschmecken.<br>
                     Anrichten und mit einem Esslöffel Sauerrahm und frisch gehackter Petersilie vollenden.
@@ -164,7 +173,7 @@
             </ol>
         </div>
 
-        <hr>
+        <!-- <hr>
 
         <div class="tipps-container">
             <h3>Tipps</h3>
@@ -177,8 +186,9 @@
                 </li>
                 <li>Einmal leicht anbrennen lassen und einen Tag vorher zubereiten verbessern den Geschmack.</li>
             </ul>
-        </div>
+        </div> -->
 
+        <h4>Rezept erstellt von</h4>
         <div class="author">
             <img src="../assets/images/profile.png" alt="Autor">
             <span>Angelo</span>
@@ -188,18 +198,22 @@
 
     <footer>
 
-        <a class="hide-on-desktop" href="../index.html"><img src="../assets/images/logo_small.png" alt="kochwelt-logo"></a>
-        <a class="hide-on-mobile" href="../index.html"><img src="../assets/images/logo.png" alt="kochwelt-logo"></a>
+        <div class="content-border-box">
+            <a class="hide-on-desktop" href="../index.html"><img src="../assets/images/logo_small.png"
+                    alt="kochwelt-logo"></a>
+            <a class="hide-on-mobile" href="../index.html"><img src="../assets/images/logo.png" alt="kochwelt-logo"></a>
 
-        <div class="footer-content">
-            <p>© Kochwelt - Alle Rechte vorbehalten</p>
-            <a href="../impressum.html">Impressum</a>
-            <a href="#">Datenschutz</a>
+            <div class="footer-content">
+                <p>© Kochwelt - Alle Rechte vorbehalten</p>
+                <a href="./impressum.html">Impressum</a>
+                <a href="./privacy.html">Datenschutz</a>
+            </div>
         </div>
+
     </footer>
 
 
-    <script src="../js/script.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/recipe-calculator.js"></script>
 
 </body>

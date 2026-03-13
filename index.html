@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -16,15 +16,19 @@
 
     <header class="fixed-header">
 
-            <a class="image-link" href="index.html"><img src="assets/images/logo.png" alt="kochwelt-logo"></a>
+        <div class="content-border-box">
+            <div class="image-link">
+                <a href="./index.html"><img src="./assets/images/logo.png" alt="kochwelt-logo"></a>
+            </div>
+
 
             <nav id="header-nav-links" class="header-nav-links">
 
                 <a href="index.html">Start</a>
-                <a href="/html/Menemen.html">Rezept des Tages</a>
+                <a href="./html/Menemen.html">Rezept des Tages</a>
+                <a href="./html/contact.html">Kontakt</a>
+                <a href="./html/impressum.html">Impressum</a>
                 <!-- <a href="#tipps">Tipps und Tricks</a> -->
-                <a href="contact.html">Kontakt</a>
-                <a href="impressum.html">Impressum</a>
             </nav>
 
             <div id="ham-menu" class="ham-menu">
@@ -32,6 +36,8 @@
                 <span></span>
                 <span></span>
             </div>
+        </div>
+
 
     </header>
 
@@ -50,16 +56,22 @@
 
         <section id="recipe-of-the-day-section" class="recipe-of-the-day-section">
 
-            <h2>Rezept des Tages</h2>
-
-            <h3>Name deines Rezeptes</h3>
-
-            <img src="./assets/images/croissant.jpg" alt="recipe image">
             
-            <p>Das ist ein Platzhalter für eine kurze Beschreibung des Rezepts.</p>
+                <img src="./assets/images/potato-salad.jpg" alt="recipe image">
 
-            <button>Rezept öffnen</button>
+                <div class="recipe-of-the-day-text">
+                    <h3>Badischer Kartoffelsalat</h3>
+
+                    <p>Ein klassiker mal anders interpretiert.</p>
+
+                    <a href="./html/badischer-kartoffelsalat.html">
+                        <button>Rezept öffnen</button>
+                    </a>    
+                </div>
             
+
+
+
         </section>
 
         <!-- recipe overview section -->
@@ -69,23 +81,35 @@
             <h2>Lust auf was Neues?</h2>
 
             <div class="recipe-container">
-                
+
                 <div class="recipe-item">
-                    <img src="./assets/images/szegediner-gulasch.jpg" alt="recipe image">
-                    <p>Szegediner Gulasch</p>
-                    <a href="html/szegediner-gulasch.html"><button>Rezept öffnen</button></a>
+                    <a href="./html/szegediner-gulasch.html">
+                        <img src="./assets/images/szegediner-gulasch.jpg" alt="recipe image">
+                        <p>Szegediner Gulasch</p>
+
+                        <button class="hide-on-desktop">Rezept öffnen</button>
+                    </a>
+
                 </div>
 
                 <div class="recipe-item">
-                    <img src="./assets/images/tomate-mozzarella-salat.png" alt="recipe image">
-                    <p>Tomate Mozzarella Salat</p>
-                    <a href=""><button>Rezept öffnen</button></a>
+                    <a href="./html/tomate-mozzarella-salat.html">
+                        <img src="./assets/images/tomate-mozzarella-salat.png" alt="recipe image">
+                        <p>Tomate Mozzarella Salat</p>
+
+                        <button class="hide-on-desktop">Rezept öffnen</button>
+                    </a>
+
                 </div>
 
                 <div class="recipe-item">
-                    <img src="./assets/images/menemen.jpg" alt="recipe image">
-                    <p>Menemen</p>
-                    <a href=""><button>Rezept öffnen</button></a>
+                    <a href="./html/Menemen.html">
+                        <img src="./assets/images/menemen.jpg" alt="recipe image">
+                        <p>Menemen</p>
+
+                        <button class="hide-on-desktop">Rezept öffnen</button>
+                    </a>
+
                 </div>
 
             </div>
@@ -112,14 +136,16 @@
                     </div>
                 </div>
 
-                <div class="information-item-left"> 
+                <div class="information-item-left">
                     <img src="./assets/images/wok-2.jpg" alt="">
 
                     <div class="item-text-left">
                         <h3>Wok</h3>
                         <p>
-                            Erhitzt sich schnell und arbeitet mit wechselnder, oft sehr hoher Hitze, wodurch Zutaten meist geschwenkt statt gewendet werden.
-                            Durch seine tiefe Form ist er vielseitig einsetzbar z.B. zum Braten, Dämpfen, Frittieren oder schnellen Anrösten.
+                            Erhitzt sich schnell und arbeitet mit wechselnder, oft sehr hoher Hitze, wodurch Zutaten
+                            meist geschwenkt statt gewendet werden.
+                            Durch seine tiefe Form ist er vielseitig einsetzbar z.B. zum Braten, Dämpfen, Frittieren
+                            oder schnellen Anrösten.
                         </p>
                     </div>
                 </div>
@@ -134,17 +160,20 @@
 
     <footer>
 
-        <a class="hide-on-desktop" href="index.html"><img src="assets/images/logo_small.png" alt="kochwelt-logo"></a>
-        <a class="hide-on-mobile" href="index.html"><img src="assets/images/logo.png" alt="kochwelt-logo"></a>
+        <div class="content-border-box">
+            <a class="hide-on-desktop" href="index.html"><img src="./assets/images/logo_small.png" alt="kochwelt-logo"></a>
+            <a class="hide-on-mobile" href="index.html"><img src="./assets/images/logo.png" alt="kochwelt-logo"></a>
 
-        <div class="footer-content">
-            <p>© Kochwelt - Alle Rechte vorbehalten</p>
-            <a href="impressum.html">Impressum</a>
-            <a href="privacy.html">Datenschutz</a>
+            <div class="footer-content">
+                <p>© Kochwelt - Alle Rechte vorbehalten</p>
+                <a href="./html/impressum.html">Impressum</a>
+                <a href="./html/privacy.html">Datenschutz</a>
+            </div>
         </div>
+
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 
