@@ -180,6 +180,10 @@ ol {
     gap: 8px;
 }
 
+.privacy-main h4 {
+    text-align: start;
+}
+
 /* mobile */
 
 /* header */
@@ -320,10 +324,6 @@ ol {
     box-shadow: none;
 }
 
-.recipe-of-the-day-section h3 {
-    text-align: start;
-}
-
 .recipe-of-the-day-text {
     display: flex;
     flex-direction: column;
@@ -357,7 +357,6 @@ ol {
 
 .recipe-item {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     gap: 8px;
 }
@@ -751,6 +750,10 @@ footer img {
         display: flex;
 
         gap: 16px;
+    }
+
+    .recipe-of-the-day-section h3 {
+        text-align: start;
     }
 
     .recipe-of-the-day-text {
