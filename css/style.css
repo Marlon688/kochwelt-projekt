@@ -815,7 +815,7 @@ hr {
 @media (min-width:768px) {
 
     .recipe-main {
-        padding: 130px 80px 80px 100px;
+        padding: 130px 80px 80px 80px;
     }
 
     .recipe-page .fixed-header {
