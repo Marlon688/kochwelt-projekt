@@ -316,6 +316,10 @@ ol {
     max-width: 1440px;
 }
 
+.recipe-of-the-day-section a:hover {
+    box-shadow: none;
+}
+
 .recipe-of-the-day-section h3 {
     text-align: start;
 }
@@ -559,6 +563,8 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    min-height: 100vh;
 }
 
 .contact-form-style {
