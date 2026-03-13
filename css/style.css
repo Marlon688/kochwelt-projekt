@@ -153,11 +153,16 @@ ol {
 
     margin: 0 auto;
     max-width: 1440px;
+    min-height: 100vh;
 
     align-items: start;
     text-align: start;
 
     gap: 8px;
+}
+
+.impressum-main h4 {
+    text-align: start;
 }
 
 .privacy-main {
@@ -167,6 +172,7 @@ ol {
 
     margin: 0 auto;
     max-width: 1440px;
+    min-height: 100vh;
 
     align-items: start;
     text-align: start;
@@ -235,7 +241,7 @@ ol {
     padding-top: 16px;
     padding-bottom: 16px;
     gap: 16px;
-    transition: .3s ease;
+    transition: .1s ease;
 }
 
 .header-nav-links.active {
@@ -256,7 +262,7 @@ ol {
     border-radius: 25px;
     position: absolute;
     left: 0;
-    transition: .3s ease;
+    transition: .1s ease;
 }
 
 .ham-menu span:nth-child(1) {
@@ -308,6 +314,10 @@ ol {
 
     margin: 0 auto;
     max-width: 1440px;
+}
+
+.recipe-of-the-day-section h3 {
+    text-align: start;
 }
 
 .recipe-of-the-day-text {
@@ -406,6 +416,7 @@ ol {
 
     margin: 0 auto;
     max-width: 1440px;
+    min-height: 100vh;
 
     gap: 16px;
 }
@@ -906,7 +917,7 @@ footer img {
 
     /* recipe overview section */
     .recipe-overview-section {
-        padding: 64px;
+        padding: 64px 128px;
     }
 
     .recipe-container {
