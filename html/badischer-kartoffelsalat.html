@@ -60,18 +60,18 @@
 
             <form id="servings-form">
                 <label for="servings-input">Personen</label>
-                <input id="portionInput" type="number" value="4" min="1" max="100" required>
-                <button onclick="calculatePortions()">Portionen</button>
+                <input id="servings-input" type="number" value="4" min="1" max="100" required>
+                <button id="servings-button" type="submit">Portionen</button>
             </form>
         </div>
 
         <ul class="ingredients">
 
-            <li data-amount= "50">50 ml milder Essig</li>
-            <li data-amount= "70">70 ml hochwertiges Speiseöl</li>
+            <li data-amount= "50" data-unit="ml">50 ml milder Essig</li>
+            <li data-amount= "70" data-unit="ml">70 ml hochwertiges Speiseöl</li>
             <li data-amount= "2" data-unit="EL">2 EL Schnittlauchröllchen</li>
-            <li data-amount= "500">500 g gekochte Pellkartoffeln</li>
-            <li data-amount= "120">120 ml Brühe</li>
+            <li data-amount= "500" data-unit="g">500 g gekochte Pellkartoffeln</li>
+            <li data-amount= "120" data-unit="ml">120 ml Brühe</li>
             <li>Salz</li>
             <li>Pfeffer</li>
             

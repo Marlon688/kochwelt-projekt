@@ -1,85 +1,109 @@
 
-let basePortions = 4;
-
-function calculatePortions() {
-
-let portions = document.getElementById("portionInput").value;
-
-if (portions < 1) {
-    portions = 1;
-    document.getElementById("portionInput").value = 1;
-    alert("Bitte mindestens 1 Portion eingeben");
-    return
-}
-let factor = portions / basePortions;
-
-let ingredients = document.querySelectorAll(".ingredients li");
-
-ingredients.forEach((ingredient) => {
-
-    let baseAmount = ingredient.getAttribute("data-amount");
-
-    if(baseAmount){
-    
-    let text = ingredient.innerText.replace(/[0-9]/g,"").trim();
-
-    let newAmount = Math.round(baseAmount * factor);
-
-    ingredient.innerText = newAmount + " " + text;
-
-    }
-
-    });
-
-
-
-}
-
-const recipe = 
-{       
-    title: "Szegediner Gulasch",
-
-    servings: 4,
-    ingredients: 
-    [
-        { amount: 500, unit: "g", name: "Schweinegulasch" },
-        { amount: 500, unit: "g.", name: "Sauerkraut"},
-        { amount: 2, unit: "Stk.", name: "Zwiebel(n)" },
-        { amount: 2, unit: "Stk.", name: "Knoblauchzehe(n)" },
-        { amount: 100, unit: "g", name: "Tomatenmark" },
-        { amount: 100, unit: "ml", name: "Weißwein"},
-        { amount: 500, unit: "ml", name: "Brühe (Gemüse, o.ä.)"},
-        { amount: 50, unit: "ml", name: "Öl"},
-        { amount: 50, unit: "g", name: "Butter"},
-        { amount: 50, unit: "g", name: "Mehl"},
-    ]
-
-}      
-
-
 const servingsForm = document.getElementById("servings-form");
-
-const amountList = document.getElementsByClassName("amount");
-
-servingsForm.addEventListener("submit", calculateServings);
+servingsForm.addEventListener("submit", calculatePortions);
 
 
+const basePortions = 4;
 
-
-function calculateServings(event)
-{   
+function calculatePortions(event) {
     event.preventDefault();
-    let newServings = document.getElementById("servings-input").value;
-    let factor = newServings / recipe.servings;
+    let portions = document.getElementById("servings-input").value;
+    let ingredients = document.querySelectorAll(".ingredients li");
 
-    for (let i = 0; i < amountList.length; i++) 
-    {
-        let baseAmounts = recipe.ingredients[i].amount;
-        let newAmount = baseAmounts * factor;
+    let factor = portions / basePortions;
 
-        amountList[i].innerText = newAmount;
-    }
+    ingredients.forEach((ingredient) => {
+
+        let baseAmount = ingredient.getAttribute("data-amount");
+
+        if (baseAmount) {
+            let text = ingredient.innerText.replace(/[0-9]/g, "");
+
+            let newAmount = Math.round(baseAmount * factor);
+            ingredient.innerText = newAmount + text;
+        }
+    });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const recipe =
+// {
+//     title: "Szegediner Gulasch",
+
+//     servings: 4,
+//     ingredients:
+//     [
+//         { amount: 500, unit: "g", name: "Schweinegulasch" },
+//         { amount: 500, unit: "g.", name: "Sauerkraut"},
+//         { amount: 2, unit: "Stk.", name: "Zwiebel(n)" },
+//         { amount: 2, unit: "Stk.", name: "Knoblauchzehe(n)" },
+//         { amount: 100, unit: "g", name: "Tomatenmark" },
+//         { amount: 100, unit: "ml", name: "Weißwein"},
+//         { amount: 500, unit: "ml", name: "Brühe (Gemüse, o.ä.)"},
+//         { amount: 50, unit: "ml", name: "Öl"},
+//         { amount: 50, unit: "g", name: "Butter"},
+//         { amount: 50, unit: "g", name: "Mehl"},
+//     ]
+
+// }
+
+
+// const servingsForm = document.getElementById("servings-form");
+
+// const amountList = document.getElementsByClassName("amount");
+
+// servingsForm.addEventListener("submit", calculateServings);
+
+
+
+
+// function calculateServings(event)
+// {
+//     event.preventDefault();
+//     let newServings = document.getElementById("servings-input").value;
+//     let factor = newServings / recipe.servings;
+
+//     for (let i = 0; i < amountList.length; i++)
+//     {
+//         let baseAmounts = recipe.ingredients[i].amount;
+//         let newAmount = baseAmounts * factor;
+
+//         amountList[i].innerText = newAmount;
+//     }
+// }
 
 
 
