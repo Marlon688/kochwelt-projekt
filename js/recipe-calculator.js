@@ -1,7 +1,5 @@
-
 const servingsForm = document.getElementById("servings-form");
 servingsForm.addEventListener("submit", calculatePortions);
-
 
 const basePortions = 4;
 
@@ -13,19 +11,23 @@ function calculatePortions(event) {
     let factor = portions / basePortions;
 
     ingredients.forEach((ingredient) => {
-
         let baseAmount = ingredient.getAttribute("data-amount");
 
         if (baseAmount) {
-            let text = ingredient.innerText.replace(/[0-9]/g, "");
+            let text = ingredient.innerText.replace(/[0-9/½]/g, "").trim();
 
-            let newAmount = Math.round(baseAmount * factor);
-            ingredient.innerText = newAmount + text;
+            let newAmount = baseAmount * factor;
+            let displayAmount;
+
+            if (newAmount < 0.5) {
+                displayAmount = "½";
+            } else {
+                displayAmount = Math.round(newAmount);
+            }
+            ingredient.innerText = displayAmount + " " + text;
         }
     });
 }
-
-
 
 
 
